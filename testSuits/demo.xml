@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AbbviePro Test Suite">
+	<test name="Registration Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.RegistrationTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testHomePageNavigation" />
+					<include name="testHeaderHomePage" />
+					<exclude name="testSignUpButton" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

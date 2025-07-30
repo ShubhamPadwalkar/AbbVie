@@ -8,67 +8,11 @@ import org.testng.annotations.*;
 import automationTesting.AbbviePro.Utils.ReportUtil;
 import automationTesting.AbbviePro.Utils.ScreenshotUtil;
 
-public class RegistrationTest {
-
-	private WebDriver driver;
-	private HomePage homePage;
-	private ScreenshotUtil screenshotUtil;
-
-	@BeforeClass
-	public void setUp() {
-		ReportUtil.initReport();
-		ReportUtil.createTest("Registration Test Setup");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().deleteAllCookies();
-		homePage = new HomePage(driver);
-		screenshotUtil = new ScreenshotUtil(driver);
-		ReportUtil.logInfo("Browser launched and cookies cleared.");
-	}
+public class RegistrationTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void testNavigation() {
-		ReportUtil.createTest("Test Navigation");
-		try {
-			// Navigation
-			homePage.navigateTo();
-			ReportUtil.logPass("Navigation To AbbViePro Website Successful.");
-			
-//			homePage.allure_attachment("Pass", driver);
-
-			String screenshotPath = screenshotUtil.takeScreenshot("Navigation");
-			ReportUtil.attachScreenshot(screenshotPath);
-
-			// Country Selection
-			homePage.selectCountry();
-			ReportUtil.logPass("Country Selection successful.");
-
-			String screenshotPath1 = screenshotUtil.takeScreenshot("Select Country");
-			ReportUtil.attachScreenshot(screenshotPath1);
-
-			// Clicking On Continue Button
-			homePage.clickingOnContinueButton();
-			ReportUtil.logPass("Clicked On Continue Button Successful.");
-
-			String screenshotPath2 = screenshotUtil.takeScreenshot("Continue Button");
-			ReportUtil.attachScreenshot(screenshotPath2);
-
-			// Accept HomePage Cookies
-			homePage.acceptHomePageCookies();
-			ReportUtil.logPass("Navigation and cookie acceptance successful.");
-
-			String screenshotPath3 = screenshotUtil.takeScreenshot("Home Page Cookies");
-			ReportUtil.attachScreenshot(screenshotPath3);
-
-		} catch (Exception e) {
-			ReportUtil.logFail("Navigation failed: " + e.getMessage());
-			try {
-				String screenshotPath = screenshotUtil.takeScreenshot("navigation_failure");
-				ReportUtil.attachScreenshot(screenshotPath);
-			} catch (Exception ex) {
-				ex.printStackTrace();
-			}
-		}
+		performCommonNavigation();
 	}
 
 	@Test(priority = 2)
@@ -118,7 +62,7 @@ public class RegistrationTest {
 			}
 		}
 	}
-	
+
 	@Test(priority = 4)
 	public void testTheoropaticButton() {
 		ReportUtil.createTest("Click On Theoropatic Button Button");
@@ -142,7 +86,7 @@ public class RegistrationTest {
 			}
 		}
 	}
-	
+
 	@Test(priority = 5)
 	public void testContactButton() {
 		ReportUtil.createTest("Click On Contact Button Button");
@@ -158,9 +102,10 @@ public class RegistrationTest {
 
 		} catch (Exception e) {
 			ReportUtil.logFail("Navigation failed: " + e.getMessage());
-			
+
 		}
 	}
+
 	@Test(priority = 6)
 	public void testSecondRegisterButton() {
 		ReportUtil.createTest("Click On Second Register Button");
@@ -172,14 +117,14 @@ public class RegistrationTest {
 			String screenshotPath = screenshotUtil.takeScreenshot("RegisterButton");
 			ReportUtil.attachScreenshot(screenshotPath);
 
-		//	homePage.pageBackButton();
+			// homePage.pageBackButton();
 
 		} catch (Exception e) {
 			ReportUtil.logFail("Navigation failed: " + e.getMessage());
-			
-			
+
 		}
 	}
+
 	@Test(priority = 7)
 	public void testSignUpButton() throws InterruptedException {
 		Thread.sleep(2000);
@@ -196,28 +141,11 @@ public class RegistrationTest {
 
 		} catch (Exception e) {
 			ReportUtil.logFail("Navigation failed: " + e.getMessage());
-			
+
 		}
 	}
-	@AfterClass
-	public void tearDown() {
-		ReportUtil.createTest("Test Teardown");
-		if (driver != null) {
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			} finally {
-				driver.quit();
-				ReportUtil.logInfo("Browser closed.");
-			}
-		}
-		ReportUtil.flushReport();
-	}
+
 }
-
-
-
 
 //
 ////
@@ -234,4 +162,3 @@ public class RegistrationTest {
 ////	public void getAllFooterLinks() {
 ////		homePage.getAllFooterLinksMethod();
 ////	}
-

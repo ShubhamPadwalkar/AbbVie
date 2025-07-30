@@ -39,7 +39,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-secondary-color     text-left'])[2]")
 	private WebElement signUpbutton;
 
-	BasePage basePage = new BasePage(driver);
+//	BasePage basePage = new BasePage(driver);
 
 	public HomePage(WebDriver driver) {
 		super(driver);

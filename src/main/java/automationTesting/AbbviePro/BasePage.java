@@ -46,7 +46,7 @@ public class BasePage {
 		driver.navigate().back();
 	}
 
-	protected String captureScreenshotAfterNavigation(String pageName) {
+	protected String captureScreenshotAfterNavigation(String pageName) throws java.awt.AWTException {
 		try {
 			String screenshotPath = screenshotUtil.takeScreenshot(pageName);
 			return screenshotPath;
