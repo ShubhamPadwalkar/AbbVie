@@ -5,8 +5,11 @@
     <classes>
       <class name="automationTesting.AbbviePro.HeaderTest">
         <methods>
-          <include name="testRheumatologieButton"/>
+          <include name="testRegisterNowButton"/>
+          <include name="testOphthalmologyParentButton"/>
           <include name="commonSetUp"/>
+          <include name="testImmunologieButton"/>
+          <include name="testVirologyButton"/>
           <include name="commonTearDown"/>
         </methods>
       </class> <!-- automationTesting.AbbviePro.HeaderTest -->

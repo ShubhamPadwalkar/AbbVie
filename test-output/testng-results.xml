@@ -1,49 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="28" passed="8" failed="0" skipped="0">
+<testng-results ignored="1" total="28" passed="23" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-31T01:33:54 IST" name="AbbviePro Test Suite" finished-at="2025-07-31T01:34:40 IST" duration-ms="45900">
+  <suite started-at="2025-07-31T13:07:36 IST" name="AbbviePro Test Suite" finished-at="2025-07-31T13:09:50 IST" duration-ms="134633">
     <groups>
     </groups>
-    <test started-at="2025-07-31T01:33:54 IST" name="Header Tests" finished-at="2025-07-31T01:34:40 IST" duration-ms="45900">
+    <test started-at="2025-07-31T13:07:36 IST" name="Header Tests" finished-at="2025-07-31T13:09:50 IST" duration-ms="134633">
       <class name="automationTesting.AbbviePro.HeaderTest">
-        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:33:54 IST" name="commonSetUp" finished-at="2025-07-31T01:33:56 IST" duration-ms="1435" status="PASS">
+        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:07:36 IST" name="commonSetUp" finished-at="2025-07-31T13:07:37 IST" duration-ms="1355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonSetUp -->
-        <test-method signature="testNavigation()[pri:1, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:33:56 IST" name="testNavigation" finished-at="2025-07-31T01:34:04 IST" duration-ms="7819" status="PASS">
+        <test-method signature="testNavigation()[pri:1, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:07:37 IST" name="testNavigation" finished-at="2025-07-31T13:07:51 IST" duration-ms="13419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigation -->
-        <test-method signature="testHomePageButton()[pri:2, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:04 IST" name="testHomePageButton" finished-at="2025-07-31T01:34:05 IST" duration-ms="1584" status="PASS">
+        <test-method signature="testHomePageButton()[pri:2, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:07:51 IST" name="testHomePageButton" finished-at="2025-07-31T13:07:53 IST" duration-ms="2297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageButton -->
-        <test-method signature="testTherapiegebieteButton()[pri:8, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:05 IST" name="testTherapiegebieteButton" finished-at="2025-07-31T01:34:08 IST" duration-ms="3073" status="PASS">
+        <test-method signature="testProductPageButton()[pri:3, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:07:53 IST" name="testProductPageButton" finished-at="2025-07-31T13:07:56 IST" duration-ms="3261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductPageButton -->
+        <test-method signature="testProductChevronIcon()[pri:4, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:07:56 IST" name="testProductChevronIcon" finished-at="2025-07-31T13:07:57 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductChevronIcon -->
+        <test-method signature="testProductOverviewButton()[pri:5, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:07:57 IST" name="testProductOverviewButton" finished-at="2025-07-31T13:08:05 IST" duration-ms="8532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductOverviewButton -->
+        <test-method signature="testProductAndUserInformationButton()[pri:6, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:05 IST" name="testProductAndUserInformationButton" finished-at="2025-07-31T13:08:09 IST" duration-ms="4399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductAndUserInformationButton -->
+        <test-method signature="testTrainingMaterialButton()[pri:7, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:09 IST" name="testTrainingMaterialButton" finished-at="2025-07-31T13:08:13 IST" duration-ms="3847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrainingMaterialButton -->
+        <test-method signature="testTherapiegebieteButton()[pri:8, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:13 IST" name="testTherapiegebieteButton" finished-at="2025-07-31T13:08:18 IST" duration-ms="4457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTherapiegebieteButton -->
-        <test-method signature="testtherapiegebieteChevronIcon()[pri:9, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:08 IST" name="testtherapiegebieteChevronIcon" finished-at="2025-07-31T01:34:09 IST" duration-ms="327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testtherapiegebieteChevronIcon -->
-        <test-method signature="testImmunologieButton()[pri:10, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:09 IST" name="testImmunologieButton" finished-at="2025-07-31T01:34:23 IST" duration-ms="14427" status="PASS">
+        <test-method signature="testImmunologieButton()[pri:10, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:18 IST" name="testImmunologieButton" finished-at="2025-07-31T13:08:22 IST" duration-ms="4123" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to navigate to Immunologie page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to navigate to Immunologie page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:171)
+at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:195)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testImmunologieButton -->
-        <test-method signature="testDermatologieButton()[pri:11, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:23 IST" name="testDermatologieButton" finished-at="2025-07-31T01:34:29 IST" duration-ms="5805" status="PASS">
+        <test-method signature="testDermatologieButton()[pri:11, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:22 IST" name="testDermatologieButton" finished-at="2025-07-31T13:08:32 IST" duration-ms="10457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDermatologieButton -->
-        <test-method signature="testGastroenterologieButton()[pri:12, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:29 IST" name="testGastroenterologieButton" finished-at="2025-07-31T01:34:32 IST" duration-ms="3061" status="PASS">
+        <test-method signature="testGastroenterologieButton()[pri:12, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:32 IST" name="testGastroenterologieButton" finished-at="2025-07-31T13:08:35 IST" duration-ms="3142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGastroenterologieButton -->
-        <test-method signature="testRheumatologieButton()[pri:13, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:32 IST" name="testRheumatologieButton" finished-at="2025-07-31T01:34:37 IST" duration-ms="5035" status="PASS">
+        <test-method signature="testRheumatologieButton()[pri:13, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:35 IST" name="testRheumatologieButton" finished-at="2025-07-31T13:08:41 IST" duration-ms="5551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRheumatologieButton -->
-        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T01:34:37 IST" name="commonTearDown" finished-at="2025-07-31T01:34:40 IST" duration-ms="3285" status="PASS">
+        <test-method signature="testOnkologieButton()[pri:14, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:41 IST" name="testOnkologieButton" finished-at="2025-07-31T13:08:47 IST" duration-ms="5651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnkologieButton -->
+        <test-method signature="testHematooncologyButton()[pri:15, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:47 IST" name="testHematooncologyButton" finished-at="2025-07-31T13:08:52 IST" duration-ms="5641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHematooncologyButton -->
+        <test-method signature="testSolidTumorsButton()[pri:16, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:52 IST" name="testSolidTumorsButton" finished-at="2025-07-31T13:08:57 IST" duration-ms="5047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolidTumorsButton -->
+        <test-method signature="testNeurologyButton()[pri:17, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:08:57 IST" name="testNeurologyButton" finished-at="2025-07-31T13:09:02 IST" duration-ms="5002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNeurologyButton -->
+        <test-method signature="testMigraineButton()[pri:18, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:02 IST" name="testMigraineButton" finished-at="2025-07-31T13:09:05 IST" duration-ms="2235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMigraineButton -->
+        <test-method signature="testParkinsonsDiseaseButton()[pri:19, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:05 IST" name="testParkinsonsDiseaseButton" finished-at="2025-07-31T13:09:10 IST" duration-ms="5348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParkinsonsDiseaseButton -->
+        <test-method signature="testSpasticityAfterStrokeButton()[pri:20, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:10 IST" name="testSpasticityAfterStrokeButton" finished-at="2025-07-31T13:09:14 IST" duration-ms="4272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpasticityAfterStrokeButton -->
+        <test-method signature="testVirologyButton()[pri:21, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:14 IST" name="testVirologyButton" finished-at="2025-07-31T13:09:14 IST" duration-ms="203" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to navigate to Virologie page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to navigate to Virologie page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:297)
+at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:426)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVirologyButton -->
+        <test-method signature="testHepatitisCHCVButton()[pri:22, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:14 IST" name="testHepatitisCHCVButton" finished-at="2025-07-31T13:09:25 IST" duration-ms="10389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHepatitisCHCVButton -->
+        <test-method signature="testOphthalmologyParentButton()[pri:23, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:25 IST" name="testOphthalmologyParentButton" finished-at="2025-07-31T13:09:25 IST" duration-ms="72" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to navigate to Augenheilkunde page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:316)
+at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:468)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOphthalmologyParentButton -->
+        <test-method signature="testOphthalmologyChildButton()[pri:24, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:25 IST" name="testOphthalmologyChildButton" finished-at="2025-07-31T13:09:35 IST" duration-ms="10407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOphthalmologyChildButton -->
+        <test-method signature="testUrologyButton()[pri:25, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:35 IST" name="testUrologyButton" finished-at="2025-07-31T13:09:37 IST" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrologyButton -->
+        <test-method signature="testIdiopathicOveractiveBladderButton()[pri:26, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:37 IST" name="testIdiopathicOveractiveBladderButton" finished-at="2025-07-31T13:09:40 IST" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIdiopathicOveractiveBladderButton -->
+        <test-method signature="testNeurogenicDetrusorOveractivityButton()[pri:27, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:40 IST" name="testNeurogenicDetrusorOveractivityButton" finished-at="2025-07-31T13:09:43 IST" duration-ms="3486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNeurogenicDetrusorOveractivityButton -->
+        <test-method signature="testRegisterNowButton()[pri:28, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:43 IST" name="testRegisterNowButton" finished-at="2025-07-31T13:09:47 IST" duration-ms="4071" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to navigate to Neurogenic detrusor overactivity page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to navigate to Neurogenic detrusor overactivity page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at automationTesting.AbbviePro.Header.clickOnRegisterNowButton(Header.java:365)
+at automationTesting.AbbviePro.HeaderTest.testRegisterNowButton(HeaderTest.java:573)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterNowButton -->
+        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@5adb0db3]" started-at="2025-07-31T13:09:47 IST" name="commonTearDown" finished-at="2025-07-31T13:09:50 IST" duration-ms="3317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonTearDown -->

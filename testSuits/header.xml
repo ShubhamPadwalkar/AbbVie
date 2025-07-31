@@ -5,26 +5,18 @@
 			<class name="automationTesting.AbbviePro.HeaderTest">
 				<methods>
 					<include name="testNavigation" />
+					
+					<!-- Home Page -->
 					<include name="testHomePageButton" />
-				
-					
-					<include name="testTherapiegebieteButton" />
-					<include name="testtherapiegebieteChevronIcon" />
-					<include name="testImmunologieButton" />
-					<include name="testDermatologieButton" />
-					<include name="testGastroenterologieButton" />
-					<include name="testRheumatologieButton" />
-					
-					   <!-- Product Page -->
-				<!--  Passed
+
+					<!-- Product Page -->
 					<include name="testProductPageButton" />
 					<include name="testProductChevronIcon" />
 					<include name="testProductOverviewButton" />
 					<include name="testProductAndUserInformationButton" />
-					<include name="testTrainingMaterialButton" /> -->
+					<include name="testTrainingMaterialButton" />
 
 					<!-- Therapy Area -->
-				<!--
 					<include name="testTherapiegebieteButton" />
 					<include name="testImmunologieButton" />
 					<include name="testDermatologieButton" />
@@ -37,6 +29,18 @@
 					<include name="testMigraineButton" />
 					<include name="testParkinsonsDiseaseButton" />
 					<include name="testSpasticityAfterStrokeButton" />
+					<include name="testVirologyButton" />
+					<include name="testHepatitisCHCVButton" />
+					<include name="testOphthalmologyParentButton" />
+					<include name="testOphthalmologyChildButton" />
+					<include name="testUrologyButton" />
+					<include name="testIdiopathicOveractiveBladderButton" />
+					<include name="testNeurogenicDetrusorOveractivityButton" />
+					<include name="testRegisterNowButton" />
+
+
+					<!--	
+				
 					<include name="testVirologyButton" />
 					<include name="testHepatitisCHCVButton" />
 					<include name="testOphthalmologyParentButton" />

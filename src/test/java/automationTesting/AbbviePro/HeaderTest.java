@@ -271,10 +271,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void testOnkologieButton() {
 		ReportUtil.createTest("Click On Onkologie Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnOnkologieButton();
 			ReportUtil.logPass("Click on Onkologie Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("OnkologieButton");
@@ -291,10 +292,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 15)
 	public void testHematooncologyButton() {
 		ReportUtil.createTest("Click On Hematooncology Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnHematooncologyButton();
 			ReportUtil.logPass("Click on Hematooncology Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("HematooncologyButton");
@@ -311,10 +313,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 16)
 	public void testSolidTumorsButton() {
 		ReportUtil.createTest("Click On Solid Tumors Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnSolidTumorsButton();
 			ReportUtil.logPass("Click on Solid Tumors Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("SolidTumorsButton");
@@ -331,10 +334,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 17)
 	public void testNeurologyButton() {
 		ReportUtil.createTest("Click On Neurology Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnNeurologyButton();
 			ReportUtil.logPass("Click on Neurology Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("NeurologyButton");
@@ -351,10 +355,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 18)
 	public void testMigraineButton() {
 		ReportUtil.createTest("Click On Migraine Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnMigraineButton();
 			ReportUtil.logPass("Click on Migraine Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("MigraineButton");
@@ -371,10 +376,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 18)
+	@Test(priority = 19)
 	public void testParkinsonsDiseaseButton() {
 		ReportUtil.createTest("Click On Parkinsons Disease Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnParkinsonsDiseaseButton();
 			ReportUtil.logPass("Click on Parkinsons Disease Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("ParkinsonsDiseaseButton");
@@ -391,10 +397,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 19)
+	@Test(priority = 20)
 	public void testSpasticityAfterStrokeButton() {
 		ReportUtil.createTest("Click On Spasticity After Stroke Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnSpasticityAfterStrokeButton();
 			ReportUtil.logPass("Click on Spasticity After Stroke Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("SpasticityAfterStrokeButton");
@@ -411,10 +418,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 20)
+	@Test(priority = 21)
 	public void testVirologyButton() {
 		ReportUtil.createTest("Click On Virology Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnVirologyButton();
 			ReportUtil.logPass("Click on Virology Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("VirologyButton");
@@ -431,10 +439,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 22)
 	public void testHepatitisCHCVButton() {
 		ReportUtil.createTest("Click On Hepatitis C HCV Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnHepatitisCHCVButton();
 			ReportUtil.logPass("Click on Hepatitis C HCV Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("HepatitisCHCVButton");
@@ -451,10 +460,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 23)
 	public void testOphthalmologyParentButton() {
 		ReportUtil.createTest("Click On Ophthalmology Parent Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnOphthalmologyParentButton();
 			ReportUtil.logPass("Click on Ophthalmology Parent Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("OphthalmologyParentButton");
@@ -471,10 +481,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 24)
 	public void testOphthalmologyChildButton() {
 		ReportUtil.createTest("Click On Ophthalmology Child Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnOphthalmologyChildButton();
 			ReportUtil.logPass("Click on Ophthalmology Child Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("OphthalmologyChildButton");
@@ -491,10 +502,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 25)
 	public void testUrologyButton() {
 		ReportUtil.createTest("Click On Urology Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnUrologyButton();
 			ReportUtil.logPass("Click on Urology Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("UrologyButton");
@@ -511,10 +523,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 26)
 	public void testIdiopathicOveractiveBladderButton() {
 		ReportUtil.createTest("Click On Idiopathic Overactive Bladder Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnIdiopathicOveractiveBladderButton();
 			ReportUtil.logPass("Click on Idiopathic Overactive Bladder Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("IdiopathicOveractiveBladderButton");
@@ -531,10 +544,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 27)
 	public void testNeurogenicDetrusorOveractivityButton() {
 		ReportUtil.createTest("Click On Neurogenic Detrusor Overactivity Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnNeurogenicDetrusorOveractivityButton();
 			ReportUtil.logPass("Click on Neurogenic Detrusor Overactivity Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("NeurogenicDetrusorOveractivityButton");
@@ -551,10 +565,11 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 28)
 	public void testRegisterNowButton() {
 		ReportUtil.createTest("Click On Register Now Button");
 		try {
+			header.clickOntherapiegebieteChevronIcon();
 			header.clickOnRegisterNowButton();
 			ReportUtil.logPass("Click on Register Now Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("RegisterNowButton");
