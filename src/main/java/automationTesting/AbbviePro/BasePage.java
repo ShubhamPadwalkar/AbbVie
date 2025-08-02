@@ -55,11 +55,11 @@ public class BasePage {
 			return null;
 		}
 	}
-	public void allure_attachment(String result , WebDriver driver) throws Exception {
-
-		Allure.addAttachment(result, new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-
-		}
+//	public void allure_attachment(String result , WebDriver driver) throws Exception {
+//
+//		Allure.addAttachment(result, new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+//
+//		}
 	
 	
 }

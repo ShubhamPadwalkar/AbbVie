@@ -1,6 +1,8 @@
 package automationTesting.AbbviePro;
 
 import java.time.Duration;
+
+import org.apache.commons.compress.harmony.pack200.NewAttribute;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
@@ -14,6 +16,7 @@ public class BaseTest {
 	protected ScreenshotUtil screenshotUtil;
 	protected HomePage homePage;
 	protected Header header;
+	protected Footer footer;
 
 	@BeforeClass
 	public void commonSetUp() {
@@ -24,6 +27,7 @@ public class BaseTest {
 		driver.manage().deleteAllCookies();
 		homePage = new HomePage(driver);
 		header = new Header(driver);
+		footer = new Footer(driver);
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");
 	}
@@ -61,7 +65,7 @@ public class BaseTest {
 				ex.printStackTrace();
 			}
 			throw new RuntimeException("Navigation failed, stopping test execution.", e); // Re-throw to fail the
-																									// test
+																							// test
 		}
 	}
 

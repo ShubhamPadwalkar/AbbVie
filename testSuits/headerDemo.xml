@@ -5,24 +5,19 @@
 			<class name="automationTesting.AbbviePro.HeaderTest">
 				<methods>
 					<include name="testNavigation" />
-
-					<!-- Header Logo and Register Buttons -->
 					<include name="testHeaderLogo" />
 					<include name="testRegister_WithEmail" />
 					<include name="testRegister_FillDetails" />
-					<!--  <include name="testReport_An_Adverse_Event" /> -->
-
-					<!-- Home Page -->
+					<include name="testReport_An_Adverse_Event" />
+					<!-- 
 					<include name="testHomePageButton" />
 
-					<!-- Product Page -->
 					<include name="testProductPageButton" />
 					<include name="testProductChevronIcon" />
 					<include name="testProductOverviewButton" />
 					<include name="testProductAndUserInformationButton" />
 					<include name="testTrainingMaterialButton" />
 
-					<!-- Therapy Area -->
 					<include name="testTherapiegebieteButton" />
 					<include name="testImmunologieButton" />
 					<include name="testDermatologieButton" />
@@ -42,16 +37,15 @@
 					<include name="testUrologyButton" />
 					<include name="testIdiopathicOveractiveBladderButton" />
 					<include name="testNeurogenicDetrusorOveractivityButton" />
-					<exclude name="testRegisterNowButton" />
-
-					<!-- Events & training -->
+					<include name="testRegisterNowButton" />  
+					
 					<include name="testEventsAndTrainingButton" />
 					<include name="testEventsAndTrainingChevronIcon" />
 					<include name="testMedicalScientificEventsButton" />
 					<include name="testProductRelatedEventsButton" />
 					<include name="testEventsAndTrainingRegisterNowButton" />
-					<include name="testServiceAndContactButton" />
-
+					<include name="testServiceAndContactButton" /> -->
+					
 				</methods>
 			</class>
 		</classes>

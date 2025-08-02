@@ -11,6 +11,18 @@ public class Header extends BasePage {
 		super(driver);
 	}
 
+	@FindBy(xpath = "//img[@class='img-fluid img d-none d-md-block  no-bgap']")
+	private WebElement headerLogo;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn-link'])[2]")
+	private WebElement register_WithEmail;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon mb-0'])[2]")
+	private WebElement register_FillDetails;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn-link link--front--icon mb-0 text-left fw-regular text-primary '])[2]")
+	private WebElement report_An_Adverse_Event;
+
 	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[32]")
 	private WebElement homePageButton;
 
@@ -94,6 +106,55 @@ public class Header extends BasePage {
 	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[57]")
 	private WebElement registerNowButton;
 
+	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[58]")
+	private WebElement eventsAndTrainingButton;
+
+	@FindBy(xpath = "(//button[@class='dmpro-v2_icon dmpro-v2_icon-chevron-down'])[6]")
+	private WebElement eventsAndTrainingChevronIcon;
+
+	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[59]")
+	private WebElement medicalScientificEventsButton;
+
+	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[60]")
+	private WebElement productRelatedEventsButton;
+
+	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[61]")
+	private WebElement eventsAndTrainingRegisterNowButton;
+
+	@FindBy(xpath = "(//div[@class='main-navigation__inner']//a)[62]")
+	private WebElement serviceAndContactButton;
+
+	public Header clickOnHeaderLogo() {
+		headerLogo.click();
+		Assert.assertTrue(driver.getTitle().contains("Startseite - AbbVie Pro Deutschland"),
+				"Failed to navigate to Header Logo");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.abbviepro.com/de/de.html",
+				"Incorrect URL after clicking Header Logo");
+		return this;
+	}
+
+	public Header clickOnRegisterWithEmail() {
+		register_WithEmail.click();
+		Assert.assertTrue(driver.getTitle().contains("Anmeldung"), "Failed to navigate to Header Logo");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Login?startURL=%2FAppRouterMVN",
+				"Incorrect URL after clicking Header Logo");
+		return this;
+	}
+
+	public Header clickOnRegister_FillDetails() {
+		register_FillDetails.click();
+		Assert.assertTrue(driver.getTitle().contains("Register"), "Failed to navigate to Header Logo");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Register?AID=AID-0000021&locale=de-DE",
+				"Incorrect URL after clicking Header Logo");
+		return this;
+	}
+
+	// Pop-up, Cannot Handle by selenium
+	public Header clickOnReport_An_Adverse_Event() {
+		report_An_Adverse_Event.click();
+		return this;
+	}
+
 	public Header clickOnHomePageButton() {
 		homePageButton.click();
 		Assert.assertTrue(driver.getTitle().contains("Startseite - AbbVie Pro Deutschland"),
@@ -144,9 +205,6 @@ public class Header extends BasePage {
 		Assert.assertEquals(driver.getCurrentUrl(),
 				"https://www.abbviepro.com/de/de/produkte/fach-und-gebrauchsinformation.html",
 				"Incorrect URL after clicking Product And User Information button");
-
-//		Assert.assertTrue(driver.getTitle().contains("Fach- & Gebrauchsinformation | AbbVie Pro Deutschland"), "Failed to navigate to Fach- & Gebrauchsinformation page");
-//		Assert.assertEquals(driver.getCurrentUrl(), "https://www.abbviepro.com/de/de/produkte/fach-und-gebrauchsinformation.html", "Incorrect URL after clicking Training Material button");
 		return this;
 	}
 
@@ -167,7 +225,6 @@ public class Header extends BasePage {
 
 	public Header clickOnImmunologieButton() {
 		ImmunologieButton.click();
-		System.out.println(driver.getCurrentUrl() + " - " + driver.getTitle());
 		Assert.assertTrue(driver.getTitle().contains("Immunologie | AbbVie Pro Deutschland"),
 				"Failed to navigate to Immunologie page");
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.abbviepro.com/de/de/therapiegebiete/immunologie.html",
@@ -199,8 +256,6 @@ public class Header extends BasePage {
 
 	public Header clickOnRheumatologieButton() {
 		rheumatologieButton.click();
-		// System.out.println(driver.getCurrentUrl() + " - " + driver.getTitle());
-
 		Assert.assertTrue(driver.getTitle().contains("Rheumatologie | AbbVie Pro Deutschland"),
 				"Failed to navigate to Migräne page");
 		Assert.assertEquals(driver.getCurrentUrl(),
@@ -239,27 +294,18 @@ public class Header extends BasePage {
 		return this;
 	}
 
-//Neurology 
+	// Neurology
 	public Header clickOnNeurologyButton() {
-
 		neurologyButton.click();
-
 		Assert.assertTrue(driver.getTitle().contains("Neurologie | AbbVie Pro Deutschland"),
 				"Failed to navigate to Neurologie page");
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.abbviepro.com/de/de/therapiegebiete/neurologie.html",
 				"Incorrect URL after clicking Neurologie button");
-
-//		Assert.assertTrue(driver.getTitle().contains("Hepatitis C (HCV) | AbbVie Pro Deutschland"),
-//				"Failed to navigate to Hepatitis C (HCV) page");
-//		Assert.assertEquals(driver.getCurrentUrl(),
-//				"https://www.abbviepro.com/de/de/therapiegebiete/virologie/hepatitis-c.html",
-//				"Incorrect URL after clicking Neurology button");
 		return this;
 	}
 
 	public Header clickOnMigraineButton() {
 		migraineButton.click();
-
 		Assert.assertTrue(driver.getTitle().contains("Migräne | AbbVie Pro Deutschland"),
 				"Failed to navigate to Migräne page");
 		Assert.assertEquals(driver.getCurrentUrl(),
@@ -270,7 +316,6 @@ public class Header extends BasePage {
 
 	public Header clickOnParkinsonsDiseaseButton() {
 		parkinsonsDiseaseButton.click();
-
 		Assert.assertTrue(driver.getTitle().contains("Parkinson-Krankheit | AbbVie Pro Deutschland"),
 				"Failed to navigate to Ophthalmologie page");
 		Assert.assertEquals(driver.getCurrentUrl(),
@@ -281,8 +326,6 @@ public class Header extends BasePage {
 
 	public Header clickOnSpasticityAfterStrokeButton() {
 		spasticityAfterStrokeButton.click();
-		// System.out.println(driver.getCurrentUrl() + " - " + driver.getTitle());
-
 		Assert.assertTrue(driver.getTitle().contains("Spastik nach Schlaganfall | AbbVie Pro Deutschland"),
 				"Failed to navigate to Spastik nach Schlaganfall page");
 		Assert.assertEquals(driver.getCurrentUrl(),
@@ -291,7 +334,7 @@ public class Header extends BasePage {
 		return this;
 	}
 
-// Virology
+	// Virology
 	public Header clickOnVirologyButton() {
 		virologyButton.click();
 		Assert.assertTrue(driver.getTitle().contains("Virologie | AbbVie Pro Deutschland"),
@@ -362,11 +405,61 @@ public class Header extends BasePage {
 
 	public Header clickOnRegisterNowButton() {
 		registerNowButton.click();
-		Assert.assertTrue(driver.getTitle().contains("register"),
-				"Failed to navigate to register page");
-		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Locale?startURL=%2Fapex%2FRegister",
+		Assert.assertTrue(driver.getTitle().contains("register"), "Failed to navigate to register page");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Register",
 				"Incorrect URL after clicking register button");
 		return this;
 	}
-}
 
+	// Events And Training
+	public Header clickOneventsAndTrainingButton() {
+		eventsAndTrainingButton.click();
+		Assert.assertTrue(driver.getTitle().contains("Events & Fortbildungen | AbbVie Pro Deutschland"),
+				"Failed to navigate to Events & Fortbildungen page");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.abbviepro.com/de/de/events-und-fortbildungen.html",
+				"Incorrect URL after clicking Home Page button");
+		return this;
+	}
+
+	public Header clickOnEventsAndTrainingChevronIcon() {
+		eventsAndTrainingChevronIcon.click();
+
+		return this;
+	}
+
+	public Header clickOnMedicalScientificEventsButton() {
+		medicalScientificEventsButton.click();
+		Assert.assertTrue(driver.getTitle().contains("Medizinisch-wissenschaftliche Events | AbbVie Pro Deutschland"),
+				"Failed to navigate to Medical Scientific Events page");
+		Assert.assertEquals(driver.getCurrentUrl(),
+				"https://www.abbviepro.com/de/de/events-und-fortbildungen/medizinisch-wissenschaftliche-events.html",
+				"Incorrect URL after clicking Home Page button");
+		return this;
+	}
+
+	public Header clickOnProductRelatedEventsButton() {
+		productRelatedEventsButton.click();
+		Assert.assertTrue(driver.getTitle().contains("Anmeldung"), "Failed to navigate to Anmeldung page");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Login?startURL=%2FAppRouterMVN",
+				"Incorrect URL after clicking Anmeldung Page button");
+		return this;
+	}
+
+	public Header clickOnEventsAndTrainingRegisterNowButton() {
+		eventsAndTrainingRegisterNowButton.click();
+		Assert.assertTrue(driver.getTitle().contains("Register"), "Failed to navigate to Startseite page");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Register",
+				"Incorrect URL after clicking Home Page button");
+		return this;
+	}
+
+	public Header clickOnServiceAndContactButton() {
+		serviceAndContactButton.click();
+		Assert.assertTrue(driver.getTitle().contains("Service und Kontakt | AbbVie Pro Deutschland"),
+				"Failed to navigate to Startseite page");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.abbviepro.com/de/de/kontakt-und-service.html",
+				"Incorrect URL after clicking Home Page button");
+		return this;
+	}
+
+}

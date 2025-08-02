@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AbbviePro Test Suite">
+	<test name="Footer Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.FooterTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testFooterLogo" />
+					<include name="testDermatologieButton" />
+					<include name="testGastroenterologieButton" />
+					<include name="testRheumatologieButton" />
+					<include name="testOnkologieButton" />
+					<include name="testNeurologieButton" />
+					<include name="testHCVButton" />
+					<include name="testOphthalmologieButton" />
+					<include name="testUrologieButton" /> 
+					<include name="testImprintButton" />
+					<include name="testPrivacyPolicyButton" />
+					<include name="testTermsOfUseButton" />
+					<include name="testContactInformationButton" />
+					<include name="testSitemapButton" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

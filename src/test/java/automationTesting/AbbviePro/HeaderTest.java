@@ -5,13 +5,106 @@ import automationTesting.AbbviePro.Utils.ReportUtil;
 
 public class HeaderTest extends BaseTest {
 
-	@Test(priority = 1)
+	@Test
 	public void testNavigation() {
 		performCommonNavigation();
 	}
+	// ---------------------
 
- // Product Page
-	@Test(priority = 2)
+	@Test
+	public void testHeaderLogo() {
+		ReportUtil.createTest("Click On Home Page Header Logo");
+		try {
+			header.clickOnHeaderLogo();
+			ReportUtil.logPass("Click on Home Page Header Logo Successful.");
+
+			String screenshotPath = screenshotUtil.takeScreenshot("HeaderLogo");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testRegister_WithEmail() {
+		ReportUtil.createTest("Click On Home Page Register Button (If Already SignIn)");
+		try {
+			header.clickOnRegisterWithEmail();
+			ReportUtil.logPass("Click on Home Page Register Button (If Already SignIn) Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("HeaderLogo");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+			Thread.sleep(1000);
+
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testRegister_FillDetails() {
+		ReportUtil.createTest("Click On Home Page Register Button (If Not SignIn)");
+		try {
+			header.clickOnRegister_FillDetails();
+			ReportUtil.logPass("Click on Home Page Register Button (If Not SignIn)) Successful.");
+			
+			String screenshotPath = screenshotUtil.takeScreenshot("Register_FillDetails");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+			Thread.sleep(1000);
+
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+	
+	// After clicking on it it is opening mail box... Eliminating the Test case
+//	@Test(priority = 5)
+//	public void testReport_An_Adverse_Event() {
+//		ReportUtil.createTest("Click On Home Page Report An Adverse Event");
+//		try {
+//			header.clickOnReport_An_Adverse_Event();
+//			ReportUtil.logPass("Click on Report An Adverse Event Successful.");
+//			// Screenshot cannot be captured
+//			header.pageBackButton();
+//
+//		} catch (Exception e) {
+//			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+//			try {
+//				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+//				ReportUtil.attachScreenshot(screenshotPath);
+//			} catch (Exception ex) {
+//				ex.printStackTrace();
+//			}
+//		}
+//	}
+
+	// ---------------------
+
+	// Product Page
+	@Test
 	public void testHomePageButton() {
 		ReportUtil.createTest("Click On Home Page Button");
 		try {
@@ -26,13 +119,14 @@ public class HeaderTest extends BaseTest {
 			try {
 				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
 				ReportUtil.attachScreenshot(screenshotPath);
+				header.pageBackButton();
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
 		}
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void testProductPageButton() {
 		ReportUtil.createTest("Click On Product Page Button");
 		try {
@@ -54,7 +148,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 4)
+	@Test
 	public void testProductChevronIcon() {
 		ReportUtil.createTest("Click On Product Chevron Icon");
 		try {
@@ -75,7 +169,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 5)
+	@Test
 	public void testProductOverviewButton() {
 		ReportUtil.createTest("Click On Product Overview Button");
 		try {
@@ -97,7 +191,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 6)
+	@Test
 	public void testProductAndUserInformationButton() {
 		ReportUtil.createTest("Click On Product And User Information Button");
 		try {
@@ -121,7 +215,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 7)
+	@Test
 	public void testTrainingMaterialButton() {
 		ReportUtil.createTest("Click On Training Material Button");
 		try {
@@ -144,9 +238,9 @@ public class HeaderTest extends BaseTest {
 			}
 		}
 	}
-	
+
 	// Thearpy Area
-	@Test(priority = 8)
+	@Test
 	public void testTherapiegebieteButton() {
 		ReportUtil.createTest("Click On Therapiegebiete Button");
 		try {
@@ -165,7 +259,8 @@ public class HeaderTest extends BaseTest {
 			}
 		}
 	}
-	@Test(priority = 9)
+
+	@Test
 	public void testtherapiegebieteChevronIcon() {
 		ReportUtil.createTest("Click On Product Chevron Icon");
 		try {
@@ -185,13 +280,14 @@ public class HeaderTest extends BaseTest {
 			}
 		}
 	}
-	@Test(priority = 10)
+
+	@Test
 	public void testImmunologieButton() {
 		ReportUtil.createTest("Click On Immunologie Button");
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(2000); // Consider removing or replacing with explicit waits
 			header.clickOntherapiegebieteChevronIcon();
-			Thread.sleep(2000);
+			Thread.sleep(2000); // Consider removing or replacing with explicit waits
 			header.clickOnImmunologieButton();
 			ReportUtil.logPass("Click on Immunologie Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("ImmunologieButton");
@@ -202,13 +298,40 @@ public class HeaderTest extends BaseTest {
 			try {
 				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
 				ReportUtil.attachScreenshot(screenshotPath);
+				// This is crucial: if pageBackButton() also fails, it won't clean up
+				header.pageBackButton(); // This might also fail if the page is in a bad state
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
+			// *** THIS IS THE MISSING PIECE ***
+			// You must re-throw the exception to mark the TestNG test as failed
+			throw new RuntimeException("Test Immunologie Button failed due to navigation issue.", e);
 		}
 	}
+//	@Test(priority = 10)
+//	public void testImmunologieButton() {
+//		ReportUtil.createTest("Click On Immunologie Button");
+//		try {
+//			Thread.sleep(2000);
+//			header.clickOntherapiegebieteChevronIcon();
+//			Thread.sleep(2000);
+//			header.clickOnImmunologieButton();
+//			ReportUtil.logPass("Click on Immunologie Button Successful.");
+//			String screenshotPath = screenshotUtil.takeScreenshot("ImmunologieButton");
+//			ReportUtil.attachScreenshot(screenshotPath);
+//			header.pageBackButton();
+//		} catch (Exception e) {
+//			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+//			try {
+//				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+//				ReportUtil.attachScreenshot(screenshotPath);
+//			} catch (Exception ex) {
+//				ex.printStackTrace();
+//			}
+//		}
+//	}
 
-	@Test(priority = 11)
+	@Test
 	public void testDermatologieButton() {
 		ReportUtil.createTest("Click On Dermatologie Button");
 		try {
@@ -229,7 +352,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 12)
+	@Test
 	public void testGastroenterologieButton() {
 		ReportUtil.createTest("Click On Gastroenterologie Button");
 		try {
@@ -250,7 +373,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 13)
+	@Test
 	public void testRheumatologieButton() {
 		ReportUtil.createTest("Click On Rheumatologie Button");
 		try {
@@ -271,7 +394,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 14)
+	@Test
 	public void testOnkologieButton() {
 		ReportUtil.createTest("Click On Onkologie Button");
 		try {
@@ -292,7 +415,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 15)
+	@Test
 	public void testHematooncologyButton() {
 		ReportUtil.createTest("Click On Hematooncology Button");
 		try {
@@ -313,7 +436,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 16)
+	@Test
 	public void testSolidTumorsButton() {
 		ReportUtil.createTest("Click On Solid Tumors Button");
 		try {
@@ -334,7 +457,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 17)
+	@Test
 	public void testNeurologyButton() {
 		ReportUtil.createTest("Click On Neurology Button");
 		try {
@@ -355,7 +478,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 18)
+	@Test
 	public void testMigraineButton() {
 		ReportUtil.createTest("Click On Migraine Button");
 		try {
@@ -376,7 +499,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 19)
+	@Test
 	public void testParkinsonsDiseaseButton() {
 		ReportUtil.createTest("Click On Parkinsons Disease Button");
 		try {
@@ -397,7 +520,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 20)
+	@Test
 	public void testSpasticityAfterStrokeButton() {
 		ReportUtil.createTest("Click On Spasticity After Stroke Button");
 		try {
@@ -418,7 +541,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 21)
+	@Test
 	public void testVirologyButton() {
 		ReportUtil.createTest("Click On Virology Button");
 		try {
@@ -439,7 +562,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 22)
+	@Test
 	public void testHepatitisCHCVButton() {
 		ReportUtil.createTest("Click On Hepatitis C HCV Button");
 		try {
@@ -460,7 +583,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 23)
+	@Test
 	public void testOphthalmologyParentButton() {
 		ReportUtil.createTest("Click On Ophthalmology Parent Button");
 		try {
@@ -481,7 +604,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 24)
+	@Test
 	public void testOphthalmologyChildButton() {
 		ReportUtil.createTest("Click On Ophthalmology Child Button");
 		try {
@@ -502,7 +625,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 25)
+	@Test
 	public void testUrologyButton() {
 		ReportUtil.createTest("Click On Urology Button");
 		try {
@@ -523,7 +646,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 26)
+	@Test
 	public void testIdiopathicOveractiveBladderButton() {
 		ReportUtil.createTest("Click On Idiopathic Overactive Bladder Button");
 		try {
@@ -544,7 +667,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 27)
+	@Test
 	public void testNeurogenicDetrusorOveractivityButton() {
 		ReportUtil.createTest("Click On Neurogenic Detrusor Overactivity Button");
 		try {
@@ -565,7 +688,7 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 28)
+	@Test
 	public void testRegisterNowButton() {
 		ReportUtil.createTest("Click On Register Now Button");
 		try {
@@ -573,6 +696,129 @@ public class HeaderTest extends BaseTest {
 			header.clickOnRegisterNowButton();
 			ReportUtil.logPass("Click on Register Now Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("RegisterNowButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+	// - - - -
+
+	@Test
+	public void testEventsAndTrainingButton() {
+		ReportUtil.createTest("Click On Events And Training Button");
+		try {
+			header.clickOneventsAndTrainingButton();
+			ReportUtil.logPass("Click on Events And Training Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("eventsAndTraining");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testEventsAndTrainingChevronIcon() {
+		ReportUtil.createTest("Click On Events And Training Chevron Icon");
+		try {
+			header.clickOnEventsAndTrainingChevronIcon();
+			ReportUtil.logPass("Click on Events And Training Chevron Icon Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("EventsAndTrainingChevronIcon");
+			ReportUtil.attachScreenshot(screenshotPath);
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testMedicalScientificEventsButton() {
+		ReportUtil.createTest("Click On Medical Scientific Events Button");
+		try {
+			header.clickOnEventsAndTrainingChevronIcon();
+			header.clickOnMedicalScientificEventsButton();
+			ReportUtil.logPass("Click on Medical Scientific Events Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("MedicalScientificEvents");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testProductRelatedEventsButton() {
+		ReportUtil.createTest("Click On Product Related Events Button");
+		try {
+			header.clickOnEventsAndTrainingChevronIcon();
+			header.clickOnProductRelatedEventsButton();
+			ReportUtil.logPass("Click on Product Related Events Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("ProductRelatedEvents");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testEventsAndTrainingRegisterNowButton() {
+		ReportUtil.createTest("Click On Events And Training Register Now Button");
+		try {
+			header.clickOnEventsAndTrainingChevronIcon();
+			header.clickOnEventsAndTrainingRegisterNowButton();
+			ReportUtil.logPass("Click on Events And Training Register Now Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("EventsAndTrainingRegisterNowButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+			header.pageBackButton();
+		} catch (Exception e) {
+			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testServiceAndContactButton() {
+		ReportUtil.createTest("Click On Service And Contact Button Now Button");
+		try {
+			header.clickOnServiceAndContactButton();
+			ReportUtil.logPass("Click on Service And Contact Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("ServiceAndContactButton");
 			ReportUtil.attachScreenshot(screenshotPath);
 			header.pageBackButton();
 		} catch (Exception e) {
