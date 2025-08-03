@@ -14,7 +14,6 @@
 					<include name="testHCVButton" />
 					<include name="testOphthalmologieButton" />
 					<include name="testUrologieButton" /> 
-					
 					<include name="testImprintButton" />
 					<include name="testPrivacyPolicyButton" />
 					<include name="testTermsOfUseButton" />
