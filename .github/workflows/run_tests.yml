@@ -5,6 +5,9 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+permissions:
+  contents: read # This is the crucial line to add
+
 jobs:
   run-tests:
     runs-on: ubuntu-latest
