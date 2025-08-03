@@ -2,60 +2,60 @@
 <testng-results ignored="2" total="59" passed="54" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-03T01:05:17 IST" name="AbbviePro Master Test Suite" finished-at="2025-08-03T01:09:45 IST" duration-ms="267380">
+  <suite started-at="2025-08-03T13:56:58 IST" name="AbbviePro Master Test Suite" finished-at="2025-08-03T14:01:47 IST" duration-ms="288874">
     <groups>
     </groups>
-    <test started-at="2025-08-03T01:05:17 IST" name="Header Tests" finished-at="2025-08-03T01:07:57 IST" duration-ms="159354">
+    <test started-at="2025-08-03T13:56:58 IST" name="Header Tests" finished-at="2025-08-03T13:59:49 IST" duration-ms="170978">
       <class name="automationTesting.AbbviePro.HeaderTest">
-        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:17 IST" name="commonSetUp" finished-at="2025-08-03T01:05:19 IST" duration-ms="1957" status="PASS">
+        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:56:58 IST" name="commonSetUp" finished-at="2025-08-03T13:57:07 IST" duration-ms="9031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonSetUp -->
-        <test-method signature="testNavigation()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:19 IST" name="testNavigation" finished-at="2025-08-03T01:05:32 IST" duration-ms="12326" status="PASS">
+        <test-method signature="testNavigation()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:07 IST" name="testNavigation" finished-at="2025-08-03T13:57:21 IST" duration-ms="13286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigation -->
-        <test-method signature="testHeaderLogo()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:32 IST" name="testHeaderLogo" finished-at="2025-08-03T01:05:35 IST" duration-ms="3563" status="PASS">
+        <test-method signature="testHeaderLogo()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:21 IST" name="testHeaderLogo" finished-at="2025-08-03T13:57:22 IST" duration-ms="1683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeaderLogo -->
-        <test-method signature="testRegister_WithEmail()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:35 IST" name="testRegister_WithEmail" finished-at="2025-08-03T01:05:45 IST" duration-ms="9339" status="PASS">
+        <test-method signature="testRegister_WithEmail()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:22 IST" name="testRegister_WithEmail" finished-at="2025-08-03T13:57:31 IST" duration-ms="8489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegister_WithEmail -->
-        <test-method signature="testRegister_FillDetails()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:45 IST" name="testRegister_FillDetails" finished-at="2025-08-03T01:05:49 IST" duration-ms="4575" status="PASS">
+        <test-method signature="testRegister_FillDetails()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:31 IST" name="testRegister_FillDetails" finished-at="2025-08-03T13:57:36 IST" duration-ms="5105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegister_FillDetails -->
-        <test-method signature="testHomePageButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:49 IST" name="testHomePageButton" finished-at="2025-08-03T01:05:52 IST" duration-ms="2418" status="PASS">
+        <test-method signature="testHomePageButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:36 IST" name="testHomePageButton" finished-at="2025-08-03T13:57:38 IST" duration-ms="2449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageButton -->
-        <test-method signature="testProductPageButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:52 IST" name="testProductPageButton" finished-at="2025-08-03T01:05:55 IST" duration-ms="3441" status="PASS">
+        <test-method signature="testProductPageButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:38 IST" name="testProductPageButton" finished-at="2025-08-03T13:57:42 IST" duration-ms="3765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductPageButton -->
-        <test-method signature="testProductChevronIcon()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:55 IST" name="testProductChevronIcon" finished-at="2025-08-03T01:05:55 IST" duration-ms="289" status="PASS">
+        <test-method signature="testProductChevronIcon()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:42 IST" name="testProductChevronIcon" finished-at="2025-08-03T13:57:43 IST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductChevronIcon -->
-        <test-method signature="testProductOverviewButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:55 IST" name="testProductOverviewButton" finished-at="2025-08-03T01:05:59 IST" duration-ms="3883" status="PASS">
+        <test-method signature="testProductOverviewButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:43 IST" name="testProductOverviewButton" finished-at="2025-08-03T13:57:46 IST" duration-ms="3633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductOverviewButton -->
-        <test-method signature="testProductAndUserInformationButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:05:59 IST" name="testProductAndUserInformationButton" finished-at="2025-08-03T01:06:04 IST" duration-ms="4917" status="PASS">
+        <test-method signature="testProductAndUserInformationButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:46 IST" name="testProductAndUserInformationButton" finished-at="2025-08-03T13:57:50 IST" duration-ms="4290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductAndUserInformationButton -->
-        <test-method signature="testTrainingMaterialButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:04 IST" name="testTrainingMaterialButton" finished-at="2025-08-03T01:06:08 IST" duration-ms="3762" status="PASS">
+        <test-method signature="testTrainingMaterialButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:50 IST" name="testTrainingMaterialButton" finished-at="2025-08-03T13:57:54 IST" duration-ms="3582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTrainingMaterialButton -->
-        <test-method signature="testTherapiegebieteButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:08 IST" name="testTherapiegebieteButton" finished-at="2025-08-03T01:06:12 IST" duration-ms="3940" status="PASS">
+        <test-method signature="testTherapiegebieteButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:54 IST" name="testTherapiegebieteButton" finished-at="2025-08-03T13:57:58 IST" duration-ms="3855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTherapiegebieteButton -->
-        <test-method signature="testImmunologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:12 IST" name="testImmunologieButton" finished-at="2025-08-03T01:06:16 IST" duration-ms="4172" status="FAIL">
+        <test-method signature="testImmunologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:57:58 IST" name="testImmunologieButton" finished-at="2025-08-03T13:58:02 IST" duration-ms="4101" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed to navigate to Immunologie page expected [true] but found [false]]]>
@@ -99,47 +99,47 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testImmunologieButton -->
-        <test-method signature="testDermatologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:16 IST" name="testDermatologieButton" finished-at="2025-08-03T01:06:27 IST" duration-ms="10604" status="PASS">
+        <test-method signature="testDermatologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:02 IST" name="testDermatologieButton" finished-at="2025-08-03T13:58:12 IST" duration-ms="10389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDermatologieButton -->
-        <test-method signature="testGastroenterologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:27 IST" name="testGastroenterologieButton" finished-at="2025-08-03T01:06:30 IST" duration-ms="3608" status="PASS">
+        <test-method signature="testGastroenterologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:12 IST" name="testGastroenterologieButton" finished-at="2025-08-03T13:58:17 IST" duration-ms="4127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGastroenterologieButton -->
-        <test-method signature="testRheumatologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:30 IST" name="testRheumatologieButton" finished-at="2025-08-03T01:06:35 IST" duration-ms="5047" status="PASS">
+        <test-method signature="testRheumatologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:17 IST" name="testRheumatologieButton" finished-at="2025-08-03T13:58:21 IST" duration-ms="4161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRheumatologieButton -->
-        <test-method signature="testOnkologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:35 IST" name="testOnkologieButton" finished-at="2025-08-03T01:06:41 IST" duration-ms="5557" status="PASS">
+        <test-method signature="testOnkologieButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:21 IST" name="testOnkologieButton" finished-at="2025-08-03T13:58:27 IST" duration-ms="5943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOnkologieButton -->
-        <test-method signature="testHematooncologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:41 IST" name="testHematooncologyButton" finished-at="2025-08-03T01:06:45 IST" duration-ms="4350" status="PASS">
+        <test-method signature="testHematooncologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:27 IST" name="testHematooncologyButton" finished-at="2025-08-03T13:58:32 IST" duration-ms="5534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHematooncologyButton -->
-        <test-method signature="testSolidTumorsButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:45 IST" name="testSolidTumorsButton" finished-at="2025-08-03T01:06:49 IST" duration-ms="3772" status="PASS">
+        <test-method signature="testSolidTumorsButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:32 IST" name="testSolidTumorsButton" finished-at="2025-08-03T13:58:36 IST" duration-ms="4277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSolidTumorsButton -->
-        <test-method signature="testNeurologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:49 IST" name="testNeurologyButton" finished-at="2025-08-03T01:06:53 IST" duration-ms="3717" status="PASS">
+        <test-method signature="testNeurologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:36 IST" name="testNeurologyButton" finished-at="2025-08-03T13:58:42 IST" duration-ms="5041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNeurologyButton -->
-        <test-method signature="testMigraineButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:53 IST" name="testMigraineButton" finished-at="2025-08-03T01:06:55 IST" duration-ms="1878" status="PASS">
+        <test-method signature="testMigraineButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:42 IST" name="testMigraineButton" finished-at="2025-08-03T13:58:45 IST" duration-ms="3423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMigraineButton -->
-        <test-method signature="testParkinsonsDiseaseButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:06:55 IST" name="testParkinsonsDiseaseButton" finished-at="2025-08-03T01:07:00 IST" duration-ms="5291" status="PASS">
+        <test-method signature="testParkinsonsDiseaseButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:45 IST" name="testParkinsonsDiseaseButton" finished-at="2025-08-03T13:58:50 IST" duration-ms="5076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testParkinsonsDiseaseButton -->
-        <test-method signature="testSpasticityAfterStrokeButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:00 IST" name="testSpasticityAfterStrokeButton" finished-at="2025-08-03T01:07:02 IST" duration-ms="2475" status="PASS">
+        <test-method signature="testSpasticityAfterStrokeButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:50 IST" name="testSpasticityAfterStrokeButton" finished-at="2025-08-03T13:58:53 IST" duration-ms="3330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpasticityAfterStrokeButton -->
-        <test-method signature="testVirologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:02 IST" name="testVirologyButton" finished-at="2025-08-03T01:07:02 IST" duration-ms="193" status="FAIL">
+        <test-method signature="testVirologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:53 IST" name="testVirologyButton" finished-at="2025-08-03T13:58:54 IST" duration-ms="229" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed to navigate to Virologie page expected [true] but found [false]]]>
@@ -183,11 +183,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVirologyButton -->
-        <test-method signature="testHepatitisCHCVButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:02 IST" name="testHepatitisCHCVButton" finished-at="2025-08-03T01:07:13 IST" duration-ms="10424" status="PASS">
+        <test-method signature="testHepatitisCHCVButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:58:54 IST" name="testHepatitisCHCVButton" finished-at="2025-08-03T13:59:04 IST" duration-ms="10412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHepatitisCHCVButton -->
-        <test-method signature="testOphthalmologyParentButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:13 IST" name="testOphthalmologyParentButton" finished-at="2025-08-03T01:07:13 IST" duration-ms="66" status="FAIL">
+        <test-method signature="testOphthalmologyParentButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:04 IST" name="testOphthalmologyParentButton" finished-at="2025-08-03T13:59:04 IST" duration-ms="67" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed to navigate to Augenheilkunde page expected [true] but found [false]]]>
@@ -231,159 +231,159 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOphthalmologyParentButton -->
-        <test-method signature="testOphthalmologyChildButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:13 IST" name="testOphthalmologyChildButton" finished-at="2025-08-03T01:07:23 IST" duration-ms="10398" status="PASS">
+        <test-method signature="testOphthalmologyChildButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:04 IST" name="testOphthalmologyChildButton" finished-at="2025-08-03T13:59:14 IST" duration-ms="10387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOphthalmologyChildButton -->
-        <test-method signature="testUrologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:23 IST" name="testUrologyButton" finished-at="2025-08-03T01:07:25 IST" duration-ms="1977" status="PASS">
+        <test-method signature="testUrologyButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:14 IST" name="testUrologyButton" finished-at="2025-08-03T13:59:17 IST" duration-ms="2203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUrologyButton -->
-        <test-method signature="testIdiopathicOveractiveBladderButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:25 IST" name="testIdiopathicOveractiveBladderButton" finished-at="2025-08-03T01:07:27 IST" duration-ms="1618" status="PASS">
+        <test-method signature="testIdiopathicOveractiveBladderButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:17 IST" name="testIdiopathicOveractiveBladderButton" finished-at="2025-08-03T13:59:19 IST" duration-ms="2055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIdiopathicOveractiveBladderButton -->
-        <test-method signature="testNeurogenicDetrusorOveractivityButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:27 IST" name="testNeurogenicDetrusorOveractivityButton" finished-at="2025-08-03T01:07:29 IST" duration-ms="1611" status="PASS">
+        <test-method signature="testNeurogenicDetrusorOveractivityButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:19 IST" name="testNeurogenicDetrusorOveractivityButton" finished-at="2025-08-03T13:59:22 IST" duration-ms="3509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNeurogenicDetrusorOveractivityButton -->
-        <test-method signature="testEventsAndTrainingButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:29 IST" name="testEventsAndTrainingButton" finished-at="2025-08-03T01:07:32 IST" duration-ms="3112" status="PASS">
+        <test-method signature="testEventsAndTrainingButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:22 IST" name="testEventsAndTrainingButton" finished-at="2025-08-03T13:59:26 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEventsAndTrainingButton -->
-        <test-method signature="testEventsAndTrainingChevronIcon()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:32 IST" name="testEventsAndTrainingChevronIcon" finished-at="2025-08-03T01:07:32 IST" duration-ms="312" status="PASS">
+        <test-method signature="testEventsAndTrainingChevronIcon()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:26 IST" name="testEventsAndTrainingChevronIcon" finished-at="2025-08-03T13:59:26 IST" duration-ms="364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEventsAndTrainingChevronIcon -->
-        <test-method signature="testMedicalScientificEventsButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:32 IST" name="testMedicalScientificEventsButton" finished-at="2025-08-03T01:07:42 IST" duration-ms="10401" status="PASS">
+        <test-method signature="testMedicalScientificEventsButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:26 IST" name="testMedicalScientificEventsButton" finished-at="2025-08-03T13:59:36 IST" duration-ms="10374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMedicalScientificEventsButton -->
-        <test-method signature="testProductRelatedEventsButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:42 IST" name="testProductRelatedEventsButton" finished-at="2025-08-03T01:07:49 IST" duration-ms="6137" status="PASS">
+        <test-method signature="testProductRelatedEventsButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:36 IST" name="testProductRelatedEventsButton" finished-at="2025-08-03T13:59:41 IST" duration-ms="4906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductRelatedEventsButton -->
-        <test-method signature="testEventsAndTrainingRegisterNowButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:49 IST" name="testEventsAndTrainingRegisterNowButton" finished-at="2025-08-03T01:07:51 IST" duration-ms="2168" status="PASS">
+        <test-method signature="testEventsAndTrainingRegisterNowButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:41 IST" name="testEventsAndTrainingRegisterNowButton" finished-at="2025-08-03T13:59:43 IST" duration-ms="1816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEventsAndTrainingRegisterNowButton -->
-        <test-method signature="testServiceAndContactButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:51 IST" name="testServiceAndContactButton" finished-at="2025-08-03T01:07:53 IST" duration-ms="2579" status="PASS">
+        <test-method signature="testServiceAndContactButton()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:43 IST" name="testServiceAndContactButton" finished-at="2025-08-03T13:59:46 IST" duration-ms="2822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testServiceAndContactButton -->
-        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T01:07:53 IST" name="commonTearDown" finished-at="2025-08-03T01:07:57 IST" duration-ms="3376" status="PASS">
+        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.HeaderTest@253d9f73]" started-at="2025-08-03T13:59:46 IST" name="commonTearDown" finished-at="2025-08-03T13:59:49 IST" duration-ms="3370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonTearDown -->
       </class> <!-- automationTesting.AbbviePro.HeaderTest -->
     </test> <!-- Header Tests -->
-    <test started-at="2025-08-03T01:07:57 IST" name="Home Page Tests" finished-at="2025-08-03T01:08:33 IST" duration-ms="35978">
+    <test started-at="2025-08-03T13:59:49 IST" name="Home Page Tests" finished-at="2025-08-03T14:00:30 IST" duration-ms="40296">
       <class name="automationTesting.AbbviePro.RegistrationTest">
-        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:07:57 IST" name="commonSetUp" finished-at="2025-08-03T01:07:58 IST" duration-ms="1535" status="PASS">
+        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T13:59:49 IST" name="commonSetUp" finished-at="2025-08-03T13:59:50 IST" duration-ms="944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonSetUp -->
-        <test-method signature="testNavigation()[pri:1, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:07:58 IST" name="testNavigation" finished-at="2025-08-03T01:08:07 IST" duration-ms="8351" status="PASS">
+        <test-method signature="testNavigation()[pri:1, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T13:59:50 IST" name="testNavigation" finished-at="2025-08-03T14:00:03 IST" duration-ms="12995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigation -->
-        <test-method signature="testHomePageNavigation()[pri:2, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:07 IST" name="testHomePageNavigation" finished-at="2025-08-03T01:08:13 IST" duration-ms="6031" status="PASS">
+        <test-method signature="testHomePageNavigation()[pri:2, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:03 IST" name="testHomePageNavigation" finished-at="2025-08-03T14:00:09 IST" duration-ms="5601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageNavigation -->
-        <test-method signature="testProductsLearnMore()[pri:3, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:13 IST" name="testProductsLearnMore" finished-at="2025-08-03T01:08:15 IST" duration-ms="2625" status="PASS">
+        <test-method signature="testProductsLearnMore()[pri:3, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:09 IST" name="testProductsLearnMore" finished-at="2025-08-03T14:00:12 IST" duration-ms="2909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductsLearnMore -->
-        <test-method signature="testTheoropaticButton()[pri:4, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:15 IST" name="testTheoropaticButton" finished-at="2025-08-03T01:08:18 IST" duration-ms="3190" status="PASS">
+        <test-method signature="testTheoropaticButton()[pri:4, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:12 IST" name="testTheoropaticButton" finished-at="2025-08-03T14:00:15 IST" duration-ms="3397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTheoropaticButton -->
-        <test-method signature="testContactButton()[pri:5, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:18 IST" name="testContactButton" finished-at="2025-08-03T01:08:21 IST" duration-ms="2957" status="PASS">
+        <test-method signature="testContactButton()[pri:5, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:15 IST" name="testContactButton" finished-at="2025-08-03T14:00:18 IST" duration-ms="3077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactButton -->
-        <test-method signature="testSecondRegisterButton()[pri:6, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:21 IST" name="testSecondRegisterButton" finished-at="2025-08-03T01:08:25 IST" duration-ms="3666" status="PASS">
+        <test-method signature="testSecondRegisterButton()[pri:6, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:18 IST" name="testSecondRegisterButton" finished-at="2025-08-03T14:00:22 IST" duration-ms="3971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSecondRegisterButton -->
-        <test-method signature="testSignUpButton()[pri:7, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:25 IST" name="testSignUpButton" finished-at="2025-08-03T01:08:29 IST" duration-ms="4405" status="PASS">
+        <test-method signature="testSignUpButton()[pri:7, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:22 IST" name="testSignUpButton" finished-at="2025-08-03T14:00:26 IST" duration-ms="4195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignUpButton -->
-        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T01:08:29 IST" name="commonTearDown" finished-at="2025-08-03T01:08:33 IST" duration-ms="3200" status="PASS">
+        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.RegistrationTest@2d6764b2]" started-at="2025-08-03T14:00:26 IST" name="commonTearDown" finished-at="2025-08-03T14:00:30 IST" duration-ms="3197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonTearDown -->
       </class> <!-- automationTesting.AbbviePro.RegistrationTest -->
     </test> <!-- Home Page Tests -->
-    <test started-at="2025-08-03T01:08:33 IST" name="Footer Tests" finished-at="2025-08-03T01:09:45 IST" duration-ms="72024">
+    <test started-at="2025-08-03T14:00:30 IST" name="Footer Tests" finished-at="2025-08-03T14:01:47 IST" duration-ms="77571">
       <class name="automationTesting.AbbviePro.FooterTest">
-        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:08:33 IST" name="commonSetUp" finished-at="2025-08-03T01:08:34 IST" duration-ms="1288" status="PASS">
+        <test-method is-config="true" signature="commonSetUp()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:30 IST" name="commonSetUp" finished-at="2025-08-03T14:00:31 IST" duration-ms="978" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonSetUp -->
-        <test-method signature="testNavigation()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:08:34 IST" name="testNavigation" finished-at="2025-08-03T01:08:43 IST" duration-ms="8665" status="PASS">
+        <test-method signature="testNavigation()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:31 IST" name="testNavigation" finished-at="2025-08-03T14:00:39 IST" duration-ms="8023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigation -->
-        <test-method signature="testFooterLogo()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:08:43 IST" name="testFooterLogo" finished-at="2025-08-03T01:08:46 IST" duration-ms="3185" status="PASS">
+        <test-method signature="testFooterLogo()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:39 IST" name="testFooterLogo" finished-at="2025-08-03T14:00:41 IST" duration-ms="2685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterLogo -->
-        <test-method signature="testDermatologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:08:46 IST" name="testDermatologieButton" finished-at="2025-08-03T01:08:52 IST" duration-ms="6168" status="PASS">
+        <test-method signature="testDermatologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:41 IST" name="testDermatologieButton" finished-at="2025-08-03T14:00:47 IST" duration-ms="5959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDermatologieButton -->
-        <test-method signature="testGastroenterologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:08:52 IST" name="testGastroenterologieButton" finished-at="2025-08-03T01:08:55 IST" duration-ms="3178" status="PASS">
+        <test-method signature="testGastroenterologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:47 IST" name="testGastroenterologieButton" finished-at="2025-08-03T14:00:52 IST" duration-ms="4246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGastroenterologieButton -->
-        <test-method signature="testRheumatologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:08:55 IST" name="testRheumatologieButton" finished-at="2025-08-03T01:09:00 IST" duration-ms="4732" status="PASS">
+        <test-method signature="testRheumatologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:52 IST" name="testRheumatologieButton" finished-at="2025-08-03T14:00:56 IST" duration-ms="4864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRheumatologieButton -->
-        <test-method signature="testOnkologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:00 IST" name="testOnkologieButton" finished-at="2025-08-03T01:09:04 IST" duration-ms="4386" status="PASS">
+        <test-method signature="testOnkologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:00:56 IST" name="testOnkologieButton" finished-at="2025-08-03T14:01:02 IST" duration-ms="5912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOnkologieButton -->
-        <test-method signature="testNeurologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:04 IST" name="testNeurologieButton" finished-at="2025-08-03T01:09:10 IST" duration-ms="5850" status="PASS">
+        <test-method signature="testNeurologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:02 IST" name="testNeurologieButton" finished-at="2025-08-03T14:01:08 IST" duration-ms="5302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNeurologieButton -->
-        <test-method signature="testHCVButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:10 IST" name="testHCVButton" finished-at="2025-08-03T01:09:13 IST" duration-ms="3237" status="PASS">
+        <test-method signature="testHCVButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:08 IST" name="testHCVButton" finished-at="2025-08-03T14:01:11 IST" duration-ms="3186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHCVButton -->
-        <test-method signature="testOphthalmologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:13 IST" name="testOphthalmologieButton" finished-at="2025-08-03T01:09:18 IST" duration-ms="4813" status="PASS">
+        <test-method signature="testOphthalmologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:11 IST" name="testOphthalmologieButton" finished-at="2025-08-03T14:01:14 IST" duration-ms="2959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOphthalmologieButton -->
-        <test-method signature="testUrologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:18 IST" name="testUrologieButton" finished-at="2025-08-03T01:09:20 IST" duration-ms="2066" status="PASS">
+        <test-method signature="testUrologieButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:14 IST" name="testUrologieButton" finished-at="2025-08-03T14:01:19 IST" duration-ms="5150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUrologieButton -->
-        <test-method signature="testImprintButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:20 IST" name="testImprintButton" finished-at="2025-08-03T01:09:25 IST" duration-ms="4842" status="PASS">
+        <test-method signature="testImprintButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:19 IST" name="testImprintButton" finished-at="2025-08-03T14:01:25 IST" duration-ms="6433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testImprintButton -->
-        <test-method signature="testPrivacyPolicyButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:25 IST" name="testPrivacyPolicyButton" finished-at="2025-08-03T01:09:28 IST" duration-ms="2978" status="PASS">
+        <test-method signature="testPrivacyPolicyButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:25 IST" name="testPrivacyPolicyButton" finished-at="2025-08-03T14:01:30 IST" duration-ms="4621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPrivacyPolicyButton -->
-        <test-method signature="testTermsOfUseButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:28 IST" name="testTermsOfUseButton" finished-at="2025-08-03T01:09:30 IST" duration-ms="2036" status="PASS">
+        <test-method signature="testTermsOfUseButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:30 IST" name="testTermsOfUseButton" finished-at="2025-08-03T14:01:32 IST" duration-ms="2046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTermsOfUseButton -->
-        <test-method signature="testContactInformationButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:30 IST" name="testContactInformationButton" finished-at="2025-08-03T01:09:38 IST" duration-ms="8137" status="PASS">
+        <test-method signature="testContactInformationButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:32 IST" name="testContactInformationButton" finished-at="2025-08-03T14:01:40 IST" duration-ms="8356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactInformationButton -->
-        <test-method signature="testSitemapButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:38 IST" name="testSitemapButton" finished-at="2025-08-03T01:09:41 IST" duration-ms="3202" status="PASS">
+        <test-method signature="testSitemapButton()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:40 IST" name="testSitemapButton" finished-at="2025-08-03T14:01:44 IST" duration-ms="3623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSitemapButton -->
-        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T01:09:41 IST" name="commonTearDown" finished-at="2025-08-03T01:09:45 IST" duration-ms="3244" status="PASS">
+        <test-method is-config="true" signature="commonTearDown()[pri:0, instance:automationTesting.AbbviePro.FooterTest@7642df8f]" started-at="2025-08-03T14:01:44 IST" name="commonTearDown" finished-at="2025-08-03T14:01:47 IST" duration-ms="3207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonTearDown -->
