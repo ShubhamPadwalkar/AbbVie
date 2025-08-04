@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read # This is the crucial line to add
+  contents: read
 
 jobs:
   run-tests:
@@ -26,9 +26,11 @@ jobs:
     - name: Run Maven Tests
       run: mvn test
 
-    - name: Upload TestNG Report
+    - name: Upload Test Reports and Screenshots
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: testng-reports
-        path: test-output/
+        name: test-results
+        path: |
+          reports/
+          screenshots/
