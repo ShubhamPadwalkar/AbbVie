@@ -5,12 +5,13 @@
 			<class name="automationTesting.AbbviePro.HeaderTest">
 				<methods>
 					<include name="testNavigation" />
+					
 					<include name="testHeaderLogo" />
 					<include name="testRegister_WithEmail" />
 					<include name="testRegister_FillDetails" />
-					<include name="testReport_An_Adverse_Event" />
-					<!-- 
 					<include name="testHomePageButton" />
+					<!-- 
+					
 
 					<include name="testProductPageButton" />
 					<include name="testProductChevronIcon" />

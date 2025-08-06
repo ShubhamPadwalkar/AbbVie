@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-AbbviePro_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">AbbviePro Test Suite</span>
+            <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">AbbviePro Master Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-AbbviePro_Test_Suite" class="navigator-link ">
-                    <span>regression.xml</span>
+                  <a href="#" panel-name="test-xml-AbbviePro_Master_Test_Suite" class="navigator-link ">
+                    <span>master-suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-AbbviePro_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-AbbviePro_Master_Test_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-AbbviePro_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-AbbviePro_Master_Test_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-AbbviePro_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-AbbviePro_Master_Test_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-AbbviePro_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-AbbviePro_Master_Test_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-AbbviePro_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-AbbviePro_Master_Test_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-AbbviePro_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-AbbviePro_Master_Test_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,51 +92,320 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">59 methods, 4 failed,   55 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" class="hide-methods failed suite-AbbviePro_Master_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-AbbviePro_Master_Test_Suite -->
+                      <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" class="show-methods failed suite-AbbviePro_Master_Test_Suite"> (show)</a> <!-- show-methods failed suite-AbbviePro_Master_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-AbbviePro_Master_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testImmunologieButton">testImmunologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testOphthalmologyParentButton">testOphthalmologyParentButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testRegisterNowButton">testRegisterNowButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testVirologyButton">testVirologyButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AbbviePro_Master_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-AbbviePro_Test_Suite" class="hide-methods passed suite-AbbviePro_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-AbbviePro_Test_Suite -->
-                      <a href="#" panel-name="suite-AbbviePro_Test_Suite" class="show-methods passed suite-AbbviePro_Test_Suite"> (show)</a> <!-- show-methods passed suite-AbbviePro_Test_Suite -->
+                      <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" class="hide-methods passed suite-AbbviePro_Master_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-AbbviePro_Master_Test_Suite -->
+                      <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" class="show-methods passed suite-AbbviePro_Master_Test_Suite"> (show)</a> <!-- show-methods passed suite-AbbviePro_Master_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-AbbviePro_Test_Suite">
+                    <div class="method-list-content passed suite-AbbviePro_Master_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testContactButton">testContactButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testContactButton">testContactButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testHomePageNavigation">testHomePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testContactInformationButton">testContactInformationButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testNavigation">testNavigation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testDermatologieButton">testDermatologieButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testProductsLearnMore">testProductsLearnMore</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testDermatologieButton">testDermatologieButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testSecondRegisterButton">testSecondRegisterButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testEventsAndTrainingButton">testEventsAndTrainingButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testSignUpButton">testSignUpButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testEventsAndTrainingChevronIcon">testEventsAndTrainingChevronIcon</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AbbviePro_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testTheoropaticButton">testTheoropaticButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testEventsAndTrainingRegisterNowButton">testEventsAndTrainingRegisterNowButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-AbbviePro_Test_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testFooterLogo">testFooterLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testGastroenterologieButton">testGastroenterologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testGastroenterologieButton">testGastroenterologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testHCVButton">testHCVButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testHeaderLogo">testHeaderLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testHematooncologyButton">testHematooncologyButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testHepatitisCHCVButton">testHepatitisCHCVButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testHomePageButton">testHomePageButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testHomePageNavigation">testHomePageNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testIdiopathicOveractiveBladderButton">testIdiopathicOveractiveBladderButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testImprintButton">testImprintButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testMedicalScientificEventsButton">testMedicalScientificEventsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testMigraineButton">testMigraineButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testNavigation">testNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testNavigation">testNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testNavigation">testNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testNeurogenicDetrusorOveractivityButton">testNeurogenicDetrusorOveractivityButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testNeurologieButton">testNeurologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testNeurologyButton">testNeurologyButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testOnkologieButton">testOnkologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testOnkologieButton">testOnkologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testOphthalmologieButton">testOphthalmologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testOphthalmologyChildButton">testOphthalmologyChildButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testParkinsonsDiseaseButton">testParkinsonsDiseaseButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testPrivacyPolicyButton">testPrivacyPolicyButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testProductAndUserInformationButton">testProductAndUserInformationButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testProductChevronIcon">testProductChevronIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testProductOverviewButton">testProductOverviewButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testProductPageButton">testProductPageButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testProductRelatedEventsButton">testProductRelatedEventsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testProductsLearnMore">testProductsLearnMore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testRegister_FillDetails">testRegister_FillDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testRegister_WithEmail">testRegister_WithEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testRheumatologieButton">testRheumatologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testRheumatologieButton">testRheumatologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testSecondRegisterButton">testSecondRegisterButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testServiceAndContactButton">testServiceAndContactButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testSignUpButton">testSignUpButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testSitemapButton">testSitemapButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testSolidTumorsButton">testSolidTumorsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testSpasticityAfterStrokeButton">testSpasticityAfterStrokeButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testTermsOfUseButton">testTermsOfUseButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.RegistrationTest" class="method navigator-link" hash-for-method="testTheoropaticButton">testTheoropaticButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testTherapiegebieteButton">testTherapiegebieteButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testTrainingMaterialButton">testTrainingMaterialButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.FooterTest" class="method navigator-link" hash-for-method="testUrologieButton">testUrologieButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testUrologyButton">testUrologyButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AbbviePro_Master_Test_Suite" title="automationTesting.AbbviePro.HeaderTest" class="method navigator-link" hash-for-method="testtherapiegebieteChevronIcon">testtherapiegebieteChevronIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AbbviePro_Master_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -147,8 +416,442 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-AbbviePro_Test_Suite" class="panel AbbviePro_Test_Suite">
-          <div class="suite-AbbviePro_Test_Suite-class-passed">
+        <div panel-name="suite-AbbviePro_Master_Test_Suite" class="panel AbbviePro_Master_Test_Suite">
+          <div class="suite-AbbviePro_Master_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automationTesting.AbbviePro.HeaderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testImmunologieButton">
+                  </a> <!-- testImmunologieButton -->
+                  <span class="method-name">testImmunologieButton</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Test Immunologie Button failed due to navigation issue.
+	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=138.0.7204.184)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bd0dec829f45f3124bdbd6f33161400, clickElement {id=f.32BAF56AFA382AB20A69C8BD0F3036A6.d.1DD40A0875D018048229DBA4EF102F96.e.320}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/yq/_yp1rq0n6mj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58472/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (5bd0dec829f45f3124bdbd6f33161400)] -&gt; xpath: (//div[@class=&apos;main-navigation__inner&apos;]//a)[39]]
+Session ID: 5bd0dec829f45f3124bdbd6f33161400
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:227)
+	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:243)
+	... 32 more
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOphthalmologyParentButton">
+                  </a> <!-- testOphthalmologyParentButton -->
+                  <span class="method-name">testOphthalmologyParentButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
+	at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:359)
+	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:518)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterNowButton">
+                  </a> <!-- testRegisterNowButton -->
+                  <span class="method-name">testRegisterNowButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to navigate to register page expected [true] but found [false]
+	at automationTesting.AbbviePro.Header.clickOnRegisterNowButton(Header.java:408)
+	at automationTesting.AbbviePro.HeaderTest.testRegisterNowButton(HeaderTest.java:623)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVirologyButton">
+                  </a> <!-- testVirologyButton -->
+                  <span class="method-name">testVirologyButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to navigate to Virologie page expected [true] but found [false]
+	at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:340)
+	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:476)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AbbviePro_Master_Test_Suite-class-failed -->
+          <div class="suite-AbbviePro_Master_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationTesting.AbbviePro.FooterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactInformationButton">
+                  </a> <!-- testContactInformationButton -->
+                  <span class="method-name">testContactInformationButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDermatologieButton">
+                  </a> <!-- testDermatologieButton -->
+                  <span class="method-name">testDermatologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFooterLogo">
+                  </a> <!-- testFooterLogo -->
+                  <span class="method-name">testFooterLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGastroenterologieButton">
+                  </a> <!-- testGastroenterologieButton -->
+                  <span class="method-name">testGastroenterologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHCVButton">
+                  </a> <!-- testHCVButton -->
+                  <span class="method-name">testHCVButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testImprintButton">
+                  </a> <!-- testImprintButton -->
+                  <span class="method-name">testImprintButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigation">
+                  </a> <!-- testNavigation -->
+                  <span class="method-name">testNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNeurologieButton">
+                  </a> <!-- testNeurologieButton -->
+                  <span class="method-name">testNeurologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOnkologieButton">
+                  </a> <!-- testOnkologieButton -->
+                  <span class="method-name">testOnkologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOphthalmologieButton">
+                  </a> <!-- testOphthalmologieButton -->
+                  <span class="method-name">testOphthalmologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPrivacyPolicyButton">
+                  </a> <!-- testPrivacyPolicyButton -->
+                  <span class="method-name">testPrivacyPolicyButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRheumatologieButton">
+                  </a> <!-- testRheumatologieButton -->
+                  <span class="method-name">testRheumatologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSitemapButton">
+                  </a> <!-- testSitemapButton -->
+                  <span class="method-name">testSitemapButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTermsOfUseButton">
+                  </a> <!-- testTermsOfUseButton -->
+                  <span class="method-name">testTermsOfUseButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUrologieButton">
+                  </a> <!-- testUrologieButton -->
+                  <span class="method-name">testUrologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AbbviePro_Master_Test_Suite-class-passed -->
+          <div class="suite-AbbviePro_Master_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationTesting.AbbviePro.HeaderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDermatologieButton">
+                  </a> <!-- testDermatologieButton -->
+                  <span class="method-name">testDermatologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEventsAndTrainingButton">
+                  </a> <!-- testEventsAndTrainingButton -->
+                  <span class="method-name">testEventsAndTrainingButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEventsAndTrainingChevronIcon">
+                  </a> <!-- testEventsAndTrainingChevronIcon -->
+                  <span class="method-name">testEventsAndTrainingChevronIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEventsAndTrainingRegisterNowButton">
+                  </a> <!-- testEventsAndTrainingRegisterNowButton -->
+                  <span class="method-name">testEventsAndTrainingRegisterNowButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGastroenterologieButton">
+                  </a> <!-- testGastroenterologieButton -->
+                  <span class="method-name">testGastroenterologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHeaderLogo">
+                  </a> <!-- testHeaderLogo -->
+                  <span class="method-name">testHeaderLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHematooncologyButton">
+                  </a> <!-- testHematooncologyButton -->
+                  <span class="method-name">testHematooncologyButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHepatitisCHCVButton">
+                  </a> <!-- testHepatitisCHCVButton -->
+                  <span class="method-name">testHepatitisCHCVButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageButton">
+                  </a> <!-- testHomePageButton -->
+                  <span class="method-name">testHomePageButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIdiopathicOveractiveBladderButton">
+                  </a> <!-- testIdiopathicOveractiveBladderButton -->
+                  <span class="method-name">testIdiopathicOveractiveBladderButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMedicalScientificEventsButton">
+                  </a> <!-- testMedicalScientificEventsButton -->
+                  <span class="method-name">testMedicalScientificEventsButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMigraineButton">
+                  </a> <!-- testMigraineButton -->
+                  <span class="method-name">testMigraineButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigation">
+                  </a> <!-- testNavigation -->
+                  <span class="method-name">testNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNeurogenicDetrusorOveractivityButton">
+                  </a> <!-- testNeurogenicDetrusorOveractivityButton -->
+                  <span class="method-name">testNeurogenicDetrusorOveractivityButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNeurologyButton">
+                  </a> <!-- testNeurologyButton -->
+                  <span class="method-name">testNeurologyButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOnkologieButton">
+                  </a> <!-- testOnkologieButton -->
+                  <span class="method-name">testOnkologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOphthalmologyChildButton">
+                  </a> <!-- testOphthalmologyChildButton -->
+                  <span class="method-name">testOphthalmologyChildButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParkinsonsDiseaseButton">
+                  </a> <!-- testParkinsonsDiseaseButton -->
+                  <span class="method-name">testParkinsonsDiseaseButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductAndUserInformationButton">
+                  </a> <!-- testProductAndUserInformationButton -->
+                  <span class="method-name">testProductAndUserInformationButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductChevronIcon">
+                  </a> <!-- testProductChevronIcon -->
+                  <span class="method-name">testProductChevronIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductOverviewButton">
+                  </a> <!-- testProductOverviewButton -->
+                  <span class="method-name">testProductOverviewButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductPageButton">
+                  </a> <!-- testProductPageButton -->
+                  <span class="method-name">testProductPageButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductRelatedEventsButton">
+                  </a> <!-- testProductRelatedEventsButton -->
+                  <span class="method-name">testProductRelatedEventsButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister_FillDetails">
+                  </a> <!-- testRegister_FillDetails -->
+                  <span class="method-name">testRegister_FillDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister_WithEmail">
+                  </a> <!-- testRegister_WithEmail -->
+                  <span class="method-name">testRegister_WithEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRheumatologieButton">
+                  </a> <!-- testRheumatologieButton -->
+                  <span class="method-name">testRheumatologieButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testServiceAndContactButton">
+                  </a> <!-- testServiceAndContactButton -->
+                  <span class="method-name">testServiceAndContactButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSolidTumorsButton">
+                  </a> <!-- testSolidTumorsButton -->
+                  <span class="method-name">testSolidTumorsButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpasticityAfterStrokeButton">
+                  </a> <!-- testSpasticityAfterStrokeButton -->
+                  <span class="method-name">testSpasticityAfterStrokeButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTherapiegebieteButton">
+                  </a> <!-- testTherapiegebieteButton -->
+                  <span class="method-name">testTherapiegebieteButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTrainingMaterialButton">
+                  </a> <!-- testTrainingMaterialButton -->
+                  <span class="method-name">testTrainingMaterialButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUrologyButton">
+                  </a> <!-- testUrologyButton -->
+                  <span class="method-name">testUrologyButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtherapiegebieteChevronIcon">
+                  </a> <!-- testtherapiegebieteChevronIcon -->
+                  <span class="method-name">testtherapiegebieteChevronIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AbbviePro_Master_Test_Suite-class-passed -->
+          <div class="suite-AbbviePro_Master_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">automationTesting.AbbviePro.RegistrationTest</span>
@@ -204,164 +907,602 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AbbviePro_Test_Suite-class-passed -->
-        </div> <!-- panel AbbviePro_Test_Suite -->
-        <div panel-name="test-xml-AbbviePro_Test_Suite" class="panel">
+          </div> <!-- suite-AbbviePro_Master_Test_Suite-class-passed -->
+        </div> <!-- panel AbbviePro_Master_Test_Suite -->
+        <div panel-name="test-xml-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/2076049/eclipse-workspace/abbvie/testSuits/regression.xml</span>
+            <span class="header-content">/Users/2076049/eclipse-workspace/abbvie/testSuits/master-suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;AbbviePro Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Registration Tests&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;AbbviePro Master Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;All Application Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;automationTesting.AbbviePro.RegistrationTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testNavigation&quot;/&gt;
-          &lt;include name=&quot;testHomePageNavigation&quot;/&gt;
-          &lt;include name=&quot;testProductsLearnMore&quot;/&gt;
-          &lt;include name=&quot;testTheoropaticButton&quot;/&gt;
-          &lt;include name=&quot;testContactButton&quot;/&gt;
-          &lt;include name=&quot;testSecondRegisterButton&quot;/&gt;
-          &lt;include name=&quot;testSignUpButton&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- automationTesting.AbbviePro.RegistrationTest --&gt;
+      &lt;class name=&quot;automationTesting.AbbviePro.HeaderTest&quot;/&gt;
+      &lt;class name=&quot;automationTesting.AbbviePro.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;automationTesting.AbbviePro.FooterTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Registration Tests --&gt;
-&lt;/suite&gt; &lt;!-- AbbviePro Test Suite --&gt;
+  &lt;/test&gt; &lt;!-- All Application Tests --&gt;
+&lt;/suite&gt; &lt;!-- AbbviePro Master Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-AbbviePro_Test_Suite" class="panel">
+        <div panel-name="testlist-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for AbbviePro Test Suite</span>
+            <span class="header-content">Tests for AbbviePro Master Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Registration Tests (1 class)</span>
+                <span class="test-name">All Application Tests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-AbbviePro_Test_Suite" class="panel">
+        <div panel-name="group-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for AbbviePro Test Suite</span>
+            <span class="header-content">Groups for AbbviePro Master Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-AbbviePro_Test_Suite" class="panel">
+        <div panel-name="times-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for AbbviePro Test Suite</span>
+            <span class="header-content">Times for AbbviePro Master Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_AbbviePro_Test_Suite');
-function tableData_AbbviePro_Test_Suite() {
+suiteTableInitFunctions.push('tableData_AbbviePro_Master_Test_Suite');
+function tableData_AbbviePro_Master_Test_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(59);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testNavigation')
-data.setCell(0, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(0, 3, 15382);
+data.setCell(0, 1, 'testRegister_WithEmail')
+data.setCell(0, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(0, 3, 29372);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testHomePageNavigation')
-data.setCell(1, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(1, 3, 11946);
+data.setCell(1, 1, 'testProductOverviewButton')
+data.setCell(1, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(1, 3, 20009);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testTheoropaticButton')
-data.setCell(2, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(2, 3, 5031);
+data.setCell(2, 1, 'testDermatologieButton')
+data.setCell(2, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(2, 3, 16881);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSignUpButton')
-data.setCell(3, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(3, 3, 4374);
+data.setCell(3, 1, 'testDermatologieButton')
+data.setCell(3, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(3, 3, 16536);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSecondRegisterButton')
-data.setCell(4, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(4, 3, 3735);
+data.setCell(4, 1, 'testNavigation')
+data.setCell(4, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(4, 3, 15960);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testContactButton')
-data.setCell(5, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(5, 3, 3562);
+data.setCell(5, 1, 'testImmunologieButton')
+data.setCell(5, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(5, 3, 14552);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testProductsLearnMore')
-data.setCell(6, 2, 'automationTesting.AbbviePro.RegistrationTest')
-data.setCell(6, 3, 2353);
-window.suiteTableData['AbbviePro_Test_Suite']= { tableData: data, tableDiv: 'times-div-AbbviePro_Test_Suite'}
+data.setCell(6, 1, 'testNavigation')
+data.setCell(6, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(6, 3, 13595);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testHomePageNavigation')
+data.setCell(7, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(7, 3, 12893);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testNavigation')
+data.setCell(8, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(8, 3, 11909);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testGastroenterologieButton')
+data.setCell(9, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(9, 3, 10901);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testRheumatologieButton')
+data.setCell(10, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(10, 3, 10525);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testHepatitisCHCVButton')
+data.setCell(11, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(11, 3, 10410);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testOphthalmologyChildButton')
+data.setCell(12, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(12, 3, 10386);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testEventsAndTrainingChevronIcon')
+data.setCell(13, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(13, 3, 10213);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testEventsAndTrainingButton')
+data.setCell(14, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(14, 3, 10191);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testOnkologieButton')
+data.setCell(15, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(15, 3, 10110);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testParkinsonsDiseaseButton')
+data.setCell(16, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(16, 3, 9808);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testProductAndUserInformationButton')
+data.setCell(17, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(17, 3, 9781);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testRegister_FillDetails')
+data.setCell(18, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(18, 3, 9613);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testContactInformationButton')
+data.setCell(19, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(19, 3, 9537);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testProductRelatedEventsButton')
+data.setCell(20, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(20, 3, 9181);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testNeurologieButton')
+data.setCell(21, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(21, 3, 8993);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testOnkologieButton')
+data.setCell(22, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(22, 3, 8993);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testPrivacyPolicyButton')
+data.setCell(23, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(23, 3, 8754);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testHematooncologyButton')
+data.setCell(24, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(24, 3, 8740);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testTheoropaticButton')
+data.setCell(25, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(25, 3, 8081);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testSolidTumorsButton')
+data.setCell(26, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(26, 3, 7783);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testMedicalScientificEventsButton')
+data.setCell(27, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(27, 3, 7182);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testRheumatologieButton')
+data.setCell(28, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(28, 3, 7093);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testNeurologyButton')
+data.setCell(29, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(29, 3, 7078);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testContactButton')
+data.setCell(30, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(30, 3, 7038);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testHCVButton')
+data.setCell(31, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(31, 3, 7034);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testTherapiegebieteButton')
+data.setCell(32, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(32, 3, 6439);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testOphthalmologieButton')
+data.setCell(33, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(33, 3, 6222);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testProductsLearnMore')
+data.setCell(34, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(34, 3, 6174);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testImprintButton')
+data.setCell(35, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(35, 3, 6137);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testProductPageButton')
+data.setCell(36, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(36, 3, 6072);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testGastroenterologieButton')
+data.setCell(37, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(37, 3, 5728);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testFooterLogo')
+data.setCell(38, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(38, 3, 5511);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testSecondRegisterButton')
+data.setCell(39, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(39, 3, 5318);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testEventsAndTrainingRegisterNowButton')
+data.setCell(40, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(40, 3, 5045);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testSpasticityAfterStrokeButton')
+data.setCell(41, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(41, 3, 4991);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testUrologieButton')
+data.setCell(42, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(42, 3, 4957);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testSitemapButton')
+data.setCell(43, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(43, 3, 4556);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testNeurogenicDetrusorOveractivityButton')
+data.setCell(44, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(44, 3, 4286);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testSignUpButton')
+data.setCell(45, 2, 'automationTesting.AbbviePro.RegistrationTest')
+data.setCell(45, 3, 4144);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testTrainingMaterialButton')
+data.setCell(46, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(46, 3, 4126);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testServiceAndContactButton')
+data.setCell(47, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(47, 3, 3373);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testHeaderLogo')
+data.setCell(48, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(48, 3, 3253);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testMigraineButton')
+data.setCell(49, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(49, 3, 2781);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testRegisterNowButton')
+data.setCell(50, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(50, 3, 2432);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testIdiopathicOveractiveBladderButton')
+data.setCell(51, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(51, 3, 2291);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testHomePageButton')
+data.setCell(52, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(52, 3, 2199);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testUrologyButton')
+data.setCell(53, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(53, 3, 2189);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testTermsOfUseButton')
+data.setCell(54, 2, 'automationTesting.AbbviePro.FooterTest')
+data.setCell(54, 3, 2050);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testProductChevronIcon')
+data.setCell(55, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(55, 3, 492);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testtherapiegebieteChevronIcon')
+data.setCell(56, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(56, 3, 277);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testVirologyButton')
+data.setCell(57, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(57, 3, 204);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testOphthalmologyParentButton')
+data.setCell(58, 2, 'automationTesting.AbbviePro.HeaderTest')
+data.setCell(58, 3, 57);
+window.suiteTableData['AbbviePro_Master_Test_Suite']= { tableData: data, tableDiv: 'times-div-AbbviePro_Master_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
-              <div id="times-div-AbbviePro_Test_Suite">
-              </div> <!-- times-div-AbbviePro_Test_Suite -->
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-AbbviePro_Master_Test_Suite">
+              </div> <!-- times-div-AbbviePro_Master_Test_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-AbbviePro_Test_Suite" class="panel">
+        <div panel-name="reporter-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for AbbviePro Test Suite</span>
+            <span class="header-content">Reporter output for AbbviePro Master Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-AbbviePro_Test_Suite" class="panel">
+        <div panel-name="ignored-methods-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-AbbviePro_Test_Suite" class="panel">
+        <div panel-name="chronological-AbbviePro_Master_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">automationTesting.AbbviePro.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationTesting.AbbviePro.HeaderTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">commonSetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testNavigation</span>
-                <span class="method-start">10671 ms</span>
+                <span class="method-start">1710 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testHomePageNavigation</span>
-                <span class="method-start">26079 ms</span>
+                <span class="method-name">testHeaderLogo</span>
+                <span class="method-start">15306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testProductsLearnMore</span>
-                <span class="method-start">38028 ms</span>
+                <span class="method-name">testRegister_WithEmail</span>
+                <span class="method-start">18560 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testTheoropaticButton</span>
-                <span class="method-start">40383 ms</span>
+                <span class="method-name">testRegister_FillDetails</span>
+                <span class="method-start">47933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testContactButton</span>
-                <span class="method-start">45415 ms</span>
+                <span class="method-name">testHomePageButton</span>
+                <span class="method-start">57547 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testSecondRegisterButton</span>
-                <span class="method-start">48978 ms</span>
+                <span class="method-name">testProductPageButton</span>
+                <span class="method-start">59747 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testSignUpButton</span>
-                <span class="method-start">52714 ms</span>
+                <span class="method-name">testProductChevronIcon</span>
+                <span class="method-start">65819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProductOverviewButton</span>
+                <span class="method-start">66311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProductAndUserInformationButton</span>
+                <span class="method-start">86320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTrainingMaterialButton</span>
+                <span class="method-start">96102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTherapiegebieteButton</span>
+                <span class="method-start">100228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testtherapiegebieteChevronIcon</span>
+                <span class="method-start">106668 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testImmunologieButton</span>
+                <span class="method-start">106945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDermatologieButton</span>
+                <span class="method-start">121500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGastroenterologieButton</span>
+                <span class="method-start">138382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRheumatologieButton</span>
+                <span class="method-start">144110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOnkologieButton</span>
+                <span class="method-start">151204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHematooncologyButton</span>
+                <span class="method-start">160197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSolidTumorsButton</span>
+                <span class="method-start">168937 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNeurologyButton</span>
+                <span class="method-start">176721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMigraineButton</span>
+                <span class="method-start">183799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParkinsonsDiseaseButton</span>
+                <span class="method-start">186581 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpasticityAfterStrokeButton</span>
+                <span class="method-start">196389 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testVirologyButton</span>
+                <span class="method-start">201380 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHepatitisCHCVButton</span>
+                <span class="method-start">201585 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testOphthalmologyParentButton</span>
+                <span class="method-start">211995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOphthalmologyChildButton</span>
+                <span class="method-start">212053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUrologyButton</span>
+                <span class="method-start">222440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIdiopathicOveractiveBladderButton</span>
+                <span class="method-start">224629 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNeurogenicDetrusorOveractivityButton</span>
+                <span class="method-start">226920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegisterNowButton</span>
+                <span class="method-start">231207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEventsAndTrainingButton</span>
+                <span class="method-start">233640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEventsAndTrainingChevronIcon</span>
+                <span class="method-start">243832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMedicalScientificEventsButton</span>
+                <span class="method-start">254045 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProductRelatedEventsButton</span>
+                <span class="method-start">261227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEventsAndTrainingRegisterNowButton</span>
+                <span class="method-start">270409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testServiceAndContactButton</span>
+                <span class="method-start">275454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">commonTearDown</span>
-                <span class="method-start">57089 ms</span>
+                <span class="method-start">278827 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationTesting.AbbviePro.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">commonSetUp</span>
+                <span class="method-start">282209 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testNavigation</span>
+                <span class="method-start">283547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHomePageNavigation</span>
+                <span class="method-start">295456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProductsLearnMore</span>
+                <span class="method-start">308349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTheoropaticButton</span>
+                <span class="method-start">314524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testContactButton</span>
+                <span class="method-start">322606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSecondRegisterButton</span>
+                <span class="method-start">329644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignUpButton</span>
+                <span class="method-start">334963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">commonTearDown</span>
+                <span class="method-start">339107 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationTesting.AbbviePro.FooterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">commonSetUp</span>
+                <span class="method-start">342320 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testNavigation</span>
+                <span class="method-start">343420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFooterLogo</span>
+                <span class="method-start">359381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDermatologieButton</span>
+                <span class="method-start">364892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGastroenterologieButton</span>
+                <span class="method-start">381428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRheumatologieButton</span>
+                <span class="method-start">392330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOnkologieButton</span>
+                <span class="method-start">402855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNeurologieButton</span>
+                <span class="method-start">412965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHCVButton</span>
+                <span class="method-start">421959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOphthalmologieButton</span>
+                <span class="method-start">428993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUrologieButton</span>
+                <span class="method-start">435216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testImprintButton</span>
+                <span class="method-start">440173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPrivacyPolicyButton</span>
+                <span class="method-start">446310 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTermsOfUseButton</span>
+                <span class="method-start">455065 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testContactInformationButton</span>
+                <span class="method-start">457115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSitemapButton</span>
+                <span class="method-start">466652 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">commonTearDown</span>
+                <span class="method-start">471208 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

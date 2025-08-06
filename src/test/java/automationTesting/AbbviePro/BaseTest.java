@@ -17,6 +17,7 @@ public class BaseTest {
 	protected HomePage homePage;
 	protected Header header;
 	protected Footer footer;
+	protected Dermatologie dermatologie;
 
 	@BeforeClass
 	public void commonSetUp() {
@@ -28,6 +29,7 @@ public class BaseTest {
 		homePage = new HomePage(driver);
 		header = new Header(driver);
 		footer = new Footer(driver);
+		dermatologie = new Dermatologie(driver);
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");
 	}

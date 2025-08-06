@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AbbviePro Test Suite">
+	<test name="Dermatologie Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.DermatologieTest">
+				<methods>
+				<include name="testNavigation" />
+					<include name="testDermatologieButtonNavigation" />
+					<include name="testLearnMoreButton" />
+					<include name="testStreamNowButton" />
+					<include name="testCardLoadMoreButton" />
+					<include name="testFirstCardReadMoreButton" />
+					<include name="testSecondCardReadMoreButton" />
+					<include name="testThirdCardReadMoreButton" />
+					<include name="testFourthCardReadMoreButton" />
+					<include name="testFifthCardReadMoreButton" />
+					<include name="testSixthCardReadMoreButton" />
+					<include name="testSeventhCardReadMoreButton" />
+					<include name="testEighthCardReadMoreButton" />
+					<include name="testNinethCardReadMoreButton" />
+					<include name="testScrollToPageTop" />
+					<include name="testPageScrollingAgain" />
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

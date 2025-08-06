@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import automationTesting.AbbviePro.Utils.ScreenshotUtil;
-import io.qameta.allure.Allure;
+//import io.qameta.allure.Allure;
 
 public class BasePage {
 	protected WebDriver driver;

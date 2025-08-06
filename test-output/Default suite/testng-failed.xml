@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationTesting.AbbviePro.FooterTest">
+      <class name="automationTesting.AbbviePro.HeaderTest">
         <methods>
-          <include name="testFooterLogo"/>
+          <include name="testOphthalmologyParentButton"/>
           <include name="commonSetUp"/>
+          <include name="testImmunologieButton"/>
+          <include name="testVirologyButton"/>
           <include name="commonTearDown"/>
         </methods>
-      </class> <!-- automationTesting.AbbviePro.FooterTest -->
+      </class> <!-- automationTesting.AbbviePro.HeaderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
