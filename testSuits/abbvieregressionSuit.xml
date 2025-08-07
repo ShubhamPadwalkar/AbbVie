@@ -78,15 +78,17 @@
 	
 	<test name="Home Page Tests">
 		<classes>
-			<class name="automationTesting.AbbviePro.RegistrationTest">
+			<class name="automationTesting.AbbviePro.HomePageTest">
 				<methods>
-					<include name="testNavigation" />
-					<include name="testHomePageNavigation" />
+					<include name="testNavigation" /> 
+					<include name="testRegisterButton" />
+					<include name="testLearnMoreButton" /> 
 					<include name="testProductsLearnMore" />
 					<include name="testTheoropaticButton" />
-					<include name="testContactButton" />
-					<include name="testSecondRegisterButton" />
-					<include name="testSignUpButton" />
+					<include name="testContactButton" /> 
+				    <include name="testSecondRegisterButton" />
+				    <include name="testSecondContactUsButton" /> 
+				    <include name="testBackToTopButton" /> 
 				</methods>
 			</class>
 		</classes>
@@ -118,16 +120,16 @@
 					<include name="testScrollToPageTop" />
 					<include name="testPageScrolling" /> 
 	
-	</methods>
-	</class>
-	</classes>
+				</methods>
+			</class>
+		</classes>
 	</test>
 
 
 <test name="Gastroenterologie Page">
 	<classes>
-	<class name="automationTesting.AbbviePro.GastroenterologieTest">
-	<methods>
+		<class name="automationTesting.AbbviePro.GastroenterologieTest">
+			<methods>
 					<include name="testNavigation" />
 					<include name="testGastroenterologieButton" />
 					<include name="testCardLoadMoreButton" />
