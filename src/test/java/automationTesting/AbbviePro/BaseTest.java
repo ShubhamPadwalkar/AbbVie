@@ -19,6 +19,7 @@ public class BaseTest {
 	protected Header header;
 	protected Footer footer;
 	protected Dermatologie dermatologie;
+	protected Gastroenterologie gastroenterologie;
 
 	@BeforeClass
 	public void commonSetUp() {
@@ -27,10 +28,11 @@ public class BaseTest {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().deleteAllCookies();
-		homePage = new HomePage(driver);
 		header = new Header(driver);
 		footer = new Footer(driver);
+		homePage = new HomePage(driver);
 		dermatologie = new Dermatologie(driver);
+		gastroenterologie = new Gastroenterologie(driver);
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");
 	}
