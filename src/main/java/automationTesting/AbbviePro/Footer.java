@@ -63,6 +63,31 @@ public class Footer extends BasePage {
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn-link   text-left fw-regular text-primary '])[18]")
 	private WebElement sitemapButton;
 
+	// Social Links
+	@FindBy(xpath = "(//span[@class='icon-facebook dmpro-v2']/parent::a)[1]")
+	private WebElement facebookIcon;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[2]")
+	private WebElement facebookExternalLink;
+
+	@FindBy(xpath = "(//span[@class='icon-instagram dmpro-v2']/parent::a)[1]")
+	private WebElement instagramIcon;
+	
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[2]")
+	private WebElement instagramExternalLink;
+	
+	@FindBy(xpath = "(//span[@class='icon-linkedin dmpro-v2']/parent::a)[1]")
+	private WebElement linkdinIcon;
+	
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[2]")
+	private WebElement linkdinExternalLink;
+	
+	@FindBy(xpath = "(//span[@class='icon-youtube dmpro-v2']/parent::a)[1]")
+	private WebElement youtubeIcon;
+	
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[2]")
+	private WebElement youtubeExternalLink;
+
 	public Footer clickOnFooterLogo() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scroll to the absolute bottom of the page
@@ -317,5 +342,113 @@ public class Footer extends BasePage {
 				"Incorrect URL after clicking Terms of Use button");
 		return this;
 	}
+	
+	public Footer clickOnfacebookIcon() throws IOException, InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		js.executeScript("arguments[0].scrollIntoView(true);", facebookIcon);
+		WebElement clickableIcon = wait.until(ExpectedConditions.elementToBeClickable(facebookIcon));
+		clickableIcon.click();
+
+		WebElement clickableExternalLink = wait.until(ExpectedConditions.elementToBeClickable(facebookExternalLink));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableExternalLink); 
+		clickableExternalLink.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			Thread.sleep(2000);
+			String screenshotPath = screenshotUtil.takeScreenshot("FacebookPageAfterClick");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+			Assert.assertTrue(driver.getTitle().contains("AbbVie | Facebook"),
+					"Failed to navigate to AbbVie Global Facebook page");
+			Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/AbbVieGlobal/",
+					"Incorrect URL after clicking Facebook link");
+		}
+		return this;
+	}
+	
+	public Footer clickOnInstagramIcon() throws IOException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Scroll to the Instagram icon and click it
+        js.executeScript("arguments[0].scrollIntoView(true);", instagramIcon);
+        WebElement clickableIcon = wait.until(ExpectedConditions.elementToBeClickable(instagramIcon));
+        clickableIcon.click();
+
+        // Now, click the actual external link that opens in a new tab
+        WebElement clickableExternalLink = wait.until(ExpectedConditions.elementToBeClickable(instagramExternalLink));
+        js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableExternalLink); // Ensure it opens in new tab
+        clickableExternalLink.click();
+
+        try (WindowSession session = new WindowSession(driver, true)) {
+            session.switchToNewWindow(); // Switches to the newly opened window/tab
+            String screenshotPath = screenshotUtil.takeScreenshot("InstagramPageAfterClick");
+            ReportUtil.attachScreenshot(screenshotPath);
+            System.out.println("Instagram - " + driver.getCurrentUrl() + " - " + driver.getTitle());
+
+			Assert.assertTrue(driver.getTitle().contains("AbbVie (@abbvie) • Instagram-Fotos und -Videos"),
+					"Failed to navigate to AbbVie Deutschland Instagram page");
+			Assert.assertEquals(driver.getCurrentUrl(), "https://www.instagram.com/abbvie/?hl=de",
+					 "Incorrect URL after clicking Instagram link");
+        }
+        return this;
+    }
+
+    public Footer clickOnLinkdinIcon() throws IOException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Scroll to the LinkedIn icon and click it
+        js.executeScript("arguments[0].scrollIntoView(true);", linkdinIcon);
+        WebElement clickableIcon = wait.until(ExpectedConditions.elementToBeClickable(linkdinIcon));
+        clickableIcon.click();
+
+        // Now, click the actual external link that opens in a new tab
+        WebElement clickableExternalLink = wait.until(ExpectedConditions.elementToBeClickable(linkdinExternalLink));
+        js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableExternalLink); // Ensure it opens in new tab
+        clickableExternalLink.click();
+
+        try (WindowSession session = new WindowSession(driver, true)) {
+            session.switchToNewWindow(); // Switches to the newly opened window/tab
+            String screenshotPath = screenshotUtil.takeScreenshot("LinkedInPageAfterClick");
+            ReportUtil.attachScreenshot(screenshotPath);
+
+			Assert.assertTrue(driver.getTitle().contains("AbbVie | LinkedIn"),
+					"Failed to navigate to AbbVie LinkedIn page");
+			Assert.assertEquals(driver.getCurrentUrl(), "https://www.linkedin.com/company/abbvie/",
+					"Incorrect URL after clicking LinkedIn link");
+        }
+        return this;
+    }
+
+    public Footer clickOnYoutubeIcon() throws IOException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Scroll to the YouTube icon and click it
+        js.executeScript("arguments[0].scrollIntoView(true);", youtubeIcon);
+        WebElement clickableIcon = wait.until(ExpectedConditions.elementToBeClickable(youtubeIcon));
+        clickableIcon.click();
+
+        // Now, click the actual external link that opens in a new tab
+        WebElement clickableExternalLink = wait.until(ExpectedConditions.elementToBeClickable(youtubeExternalLink));
+        js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableExternalLink); // Ensure it opens in new tab
+        clickableExternalLink.click();
+
+        try (WindowSession session = new WindowSession(driver, true)) {
+            session.switchToNewWindow(); // Switches to the newly opened window/tab
+            String screenshotPath = screenshotUtil.takeScreenshot("YoutubePageAfterClick");
+            ReportUtil.attachScreenshot(screenshotPath);
+
+			Assert.assertTrue(driver.getTitle().contains("AbbVie Deutschland - YouTube"),
+					"Failed to navigate to AbbVie Deutschland YouTube page");
+			Assert.assertEquals(driver.getCurrentUrl(), "https://www.youtube.com/c/AbbVieDeutschlandYouTube",
+					"Incorrect URL after clicking YouTube link");
+        }
+        return this;
+    }
 
 }

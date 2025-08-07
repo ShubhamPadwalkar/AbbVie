@@ -18,7 +18,11 @@
 					<include name="testPrivacyPolicyButton" />
 					<include name="testTermsOfUseButton" />
 					<include name="testContactInformationButton" />
-					<include name="testSitemapButton" />
+					<include name="testSitemapButton" /> 
+					<include name="testFacebookIcon" />
+					<include name="testInstagramIcon" />
+					<include name="testLinkdinIcon" />
+					<include name="testYoutubeIcon" />
 				</methods>
 			</class>
 		</classes>
