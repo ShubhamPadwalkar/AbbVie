@@ -20,43 +20,46 @@ public class BaseTest {
 	protected Footer footer;
 	protected Dermatologie dermatologie;
 	protected Gastroenterologie gastroenterologie;
+	protected BasePage basePage;
 
 	@BeforeClass
 	public void commonSetUp() {
 		ReportUtil.initReport();
-		ReportUtil.createTest("Test Setup"); // Or handle this differently if each class creates its own test
+		ReportUtil.createTest("Test Setup"); 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().deleteAllCookies();
+		basePage = new BasePage(driver);
 		header = new Header(driver);
 		footer = new Footer(driver);
 		homePage = new HomePage(driver);
 		dermatologie = new Dermatologie(driver);
 		gastroenterologie = new Gastroenterologie(driver);
+		
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");
 	}
 
 	// This method encapsulates the common navigation logic
 	protected void performCommonNavigation() {
-		ReportUtil.createTest("Navigation"); // Or integrate into the calling test's report entry
+		ReportUtil.createTest("Navigation"); 
 		try {
-			homePage.navigateTo();
+			basePage.navigateTo();
 			ReportUtil.logPass("Navigation To AbbViePro Website Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("Navigation");
 			ReportUtil.attachScreenshot(screenshotPath);
 
-			homePage.selectCountry();
+			basePage.selectCountry();
 			ReportUtil.logPass("Country Selection successful.");
 			String screenshotPath1 = screenshotUtil.takeScreenshot("Select Country");
 			ReportUtil.attachScreenshot(screenshotPath1);
 
-			homePage.clickingOnContinueButton();
+			basePage.clickingOnContinueButton();
 			ReportUtil.logPass("Clicked On Continue Button Successful.");
 			String screenshotPath2 = screenshotUtil.takeScreenshot("Continue Button");
 			ReportUtil.attachScreenshot(screenshotPath2);
 
-			homePage.acceptHomePageCookies();
+			basePage.acceptHomePageCookies();
 			ReportUtil.logPass("Navigation and cookie acceptance successful.");
 			String screenshotPath3 = screenshotUtil.takeScreenshot("Home Page Cookies");
 			ReportUtil.attachScreenshot(screenshotPath3);
@@ -69,8 +72,7 @@ public class BaseTest {
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
-			throw new RuntimeException("Navigation failed, stopping test execution.", e); // Re-throw to fail the
-																							// test
+			throw new RuntimeException("Navigation failed, stopping test execution.", e); 
 		}
 	}
 
