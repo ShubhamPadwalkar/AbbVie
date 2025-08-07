@@ -1,8 +1,8 @@
-automationTesting/AbbviePro/BasePage.class
 automationTesting/AbbviePro/RegistrationPage.class
 automationTesting/AbbviePro/Utils/ScreenshotUtil.class
-automationTesting/AbbviePro/HomePage.class
 automationTesting/AbbviePro/Header.class
 automationTesting/AbbviePro/Utils/ReportUtil.class
 automationTesting/AbbviePro/Footer.class
+automationTesting/AbbviePro/BasePage.class
+automationTesting/AbbviePro/HomePage.class
 automationTesting/AbbviePro/Utils/WindowSession.class

@@ -51,21 +51,6 @@
 		</classes>
 	</test>
 
-	<test name="Home Page Tests">
-		<classes>
-			<class name="automationTesting.AbbviePro.RegistrationTest">
-				<methods>
-					<include name="testNavigation" />
-					<include name="testHomePageNavigation" />
-					<include name="testProductsLearnMore" />
-					<include name="testTheoropaticButton" />
-					<include name="testContactButton" />
-					<include name="testSecondRegisterButton" />
-					<include name="testSignUpButton" />
-				</methods>
-			</class>
-		</classes>
-	</test>
 
 	<test name="Footer Tests">
 		<classes>
@@ -90,6 +75,87 @@
 			</class>
 		</classes>
 	</test>
+	
+	<test name="Home Page Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.RegistrationTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testHomePageNavigation" />
+					<include name="testProductsLearnMore" />
+					<include name="testTheoropaticButton" />
+					<include name="testContactButton" />
+					<include name="testSecondRegisterButton" />
+					<include name="testSignUpButton" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Dermatologie Page">
+	<classes>
+	<class name="automationTesting.AbbviePro.DermatologieTest">
+	<methods>
+					<include name="testNavigation" />
+					<include name="testDermatologieButtonNavigation" />
+					<include name="testLearnMoreButton" />
+					<include name="testStreamNowButton" />
+					<include name="testCardLoadMoreButton" />
+					<include name="testFirstCardReadMoreButton" />
+					<include name="testSecondCardReadMoreButton" />
+					<include name="testThirdCardReadMoreButton" />
+					<include name="testFourthCardReadMoreButton" />
+					<include name="testFifthCardReadMoreButton" />
+					<include name="testSixthCardReadMoreButton" />
+					<include name="testSeventhCardReadMoreButton" />
+					<include name="testEighthCardReadMoreButton" />
+					<include name="testNinethCardReadMoreButton" />
+					<include name="testContactUsButton" />
+					<include name="testAbbvieCareButton" />
+					<include name="testAbbvieCareLearnMoreButton" />
+					<include name="testAtopicDermatitisButton" />
+					<include name="testPSOUL_ReadMoreButton" />
+					<include name="testScrollToPageTop" />
+					<include name="testPageScrolling" /> 
+	
+	</methods>
+	</class>
+	</classes>
+	</test>
 
+
+<test name="Gastroenterologie Page">
+	<classes>
+	<class name="automationTesting.AbbviePro.GastroenterologieTest">
+	<methods>
+					<include name="testNavigation" />
+					<include name="testGastroenterologieButton" />
+					<include name="testCardLoadMoreButton" />
+					<include name="testFirstCardReadMoreButton" />
+					<include name="testSecondCardReadMoreButton" />
+					<include name="testThirdCardReadMoreButton" />
+					<include name="testFourthCardReadMoreButton" />
+					<include name="testFifthCardReadMoreButton" />
+					<include name="testSixthCardReadMoreButton" />
+					<include name="testSeventhCardReadMoreButton" />
+					<include name="testEighthCardReadMoreButton" />
+					<include name="testNinethCardReadMoreButton" />
+					<include name="testTenthCardReadMoreButton" />
+					<include name="testEleventhCardReadMoreButton" />
+					<include name="testTwelvethCardReadMoreButton" />
+					<include name="testThirteenthCardReadMoreButton" />
+					<include name="testFourteenthCardReadMoreButton" />
+					<include name="testCongressHighlightButton" />
+					<include name="testTakeALookNowButton" />
+					<include name="testExclusivelyLearnMoreButton" />
+					<include name="testContactUsButton" />
+					<include name="testAbbvieCareButton" />
+					<include name="testLivingWith_IBD_LearnMoreButton" />
+					<include name="testScrollToPageTop" />
+					<include name="testPageScrolling" />	
+				</methods>
+			</class>
+		</classes>
+	</test>
 
 </suite>

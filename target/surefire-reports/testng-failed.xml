@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Surefire suite]" verbose="0">
-  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+<suite name="Failed suite [AbbviePro Master Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Header Tests(failed)" verbose="0">
     <classes>
       <class name="automationTesting.AbbviePro.HeaderTest">
         <methods>
@@ -13,5 +13,16 @@
         </methods>
       </class> <!-- automationTesting.AbbviePro.HeaderTest -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Header Tests(failed) -->
+  <test thread-count="5" name="Dermatologie Page(failed)" verbose="0">
+    <classes>
+      <class name="automationTesting.AbbviePro.DermatologieTest">
+        <methods>
+          <include name="commonSetUp"/>
+          <include name="testStreamNowButton"/>
+          <include name="commonTearDown"/>
+        </methods>
+      </class> <!-- automationTesting.AbbviePro.DermatologieTest -->
+    </classes>
+  </test> <!-- Dermatologie Page(failed) -->
+</suite> <!-- Failed suite [AbbviePro Master Test Suite] -->
