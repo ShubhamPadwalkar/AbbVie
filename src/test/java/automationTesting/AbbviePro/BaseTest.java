@@ -3,6 +3,7 @@ package automationTesting.AbbviePro;
 import java.time.Duration;
 
 import org.apache.commons.compress.harmony.pack200.NewAttribute;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
@@ -69,6 +70,13 @@ public class BaseTest {
 			throw new RuntimeException("Navigation failed, stopping test execution.", e); // Re-throw to fail the
 																							// test
 		}
+	}
+
+	// Scrolled to top of page
+	public void scrollToPageTop() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
+		System.out.println("Page scrolled to the top.");
 	}
 
 	@AfterClass

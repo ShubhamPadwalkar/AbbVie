@@ -5,7 +5,6 @@
     <classes>
       <class name="automationTesting.AbbviePro.HeaderTest">
         <methods>
-          <include name="testRegisterNowButton"/>
           <include name="testOphthalmologyParentButton"/>
           <include name="commonSetUp"/>
           <include name="testImmunologieButton"/>

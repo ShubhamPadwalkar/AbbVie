@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AbbviePro Master Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="All Application Tests(failed)" verbose="0">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
       <class name="automationTesting.AbbviePro.HeaderTest">
         <methods>
-          <include name="testRegisterNowButton"/>
           <include name="testOphthalmologyParentButton"/>
           <include name="commonSetUp"/>
           <include name="testImmunologieButton"/>
@@ -14,5 +13,5 @@
         </methods>
       </class> <!-- automationTesting.AbbviePro.HeaderTest -->
     </classes>
-  </test> <!-- All Application Tests(failed) -->
-</suite> <!-- Failed suite [AbbviePro Master Test Suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

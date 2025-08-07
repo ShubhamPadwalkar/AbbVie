@@ -1,5 +1,6 @@
 package automationTesting.AbbviePro;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import automationTesting.AbbviePro.Utils.ReportUtil;
 import automationTesting.AbbviePro.Utils.ScrollUtils;
 import automationTesting.AbbviePro.Utils.WindowSession;
 
@@ -27,8 +29,7 @@ public class Dermatologie extends BasePage {
 
 	@FindBy(xpath = "//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-white     text-left']")
 	private WebElement streamNowButton;
-	
-	// -------------------------
+
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon mb-0'])[3]")
 	private WebElement firstCardReadMoreButton;
 
@@ -56,8 +57,20 @@ public class Dermatologie extends BasePage {
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon mb-0'])[11]")
 	private WebElement ninethCardReadMoreButton;
 
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[1]")
+	private WebElement contactUsButton;
 
-	// -------------------------
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[2]")
+	private WebElement abbvieCareButton;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[3]")
+	private WebElement abbvieCareLearnMoreButton;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[4]")
+	private WebElement atopicDermatitisButton;
+
+	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[5]")
+	private WebElement PSOUL_ReadMoreButton;
 
 	@FindBy(xpath = "//button[@class='dmpro-v2 btn btn-primary btn-with-icon']")
 	private WebElement cardLoadMoreButton;
@@ -79,239 +92,381 @@ public class Dermatologie extends BasePage {
 		return this;
 	}
 
-	public Dermatologie clickLearnMoreButton() {
-		learnMoreButton.click();
-		System.out.println(driver.getCurrentUrl() + " - " + driver.getTitle());
-		// Assert that we're on the expected page after clicking Learn More
-//		Assert.assertTrue(driver.getTitle().contains("Register"), "Failed to navigate to Register page");
-//		Assert.assertEquals(driver.getCurrentUrl(), "https://id.abbvie.com/Register?AID=AID-0000021&locale=de-DE",
-//				"Incorrect URL after clicking Learn More button");
-		return this;
-	}
-
-	public Dermatologie clickStreamNowButton() {
-		streamNowButton.click();
-		System.out.println(driver.getCurrentUrl() + " - " + driver.getTitle());
-		return this;
-	}
-	// -------------------------
-
-	
-	public Dermatologie clickOnFirstCardReadMoreButton() {
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    
-	    // Scroll the button into view
-	    js.executeScript("arguments[0].scrollIntoView(true);", firstCardReadMoreButton);
-
-	    // Wait for the button to be clickable
-	    WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(firstCardReadMoreButton));
-	    
-	    // Use JavaScript to open the link in a new tab
-	    js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
-	    clickableButton.click();
-
-	    // Use the WindowSession utility to switch to the new tab, capture details, and switch back
-	    try (WindowSession session = new WindowSession(driver, true)) {
-	        session.switchToNewWindow();
-	        System.out.println("New Tab Title: " + driver.getTitle());
-	        System.out.println("New Tab URL: " + driver.getCurrentUrl());
-	    }
-
-	    System.out.println("1 --> "+driver.getCurrentUrl() + " - " + driver.getTitle());
-	    return this;
-	}
-	
-	public Dermatologie clickOnSecondCardReadMoreButton() {
+	public Dermatologie clickLearnMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", learnMoreButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(learnMoreButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("clickLearnMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+			Assert.assertTrue(driver.getTitle().contains("Anmeldung"),
+					"Failed to navigate to DermaTalks");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://id.abbvie.com/Login?startURL=%2FAppRouterMVN",
+					"Incorrect URL after clicking Learn More Button");
+		}
+		return this;
+	}
 
+	public Dermatologie clickStreamNowButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", streamNowButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(streamNowButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("StreamNowButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+			Assert.assertTrue(driver.getTitle().contains("Derma Talks &amp; Congress TV | AbbVie Pro Deutschland"),
+					"Failed to navigate to DermaTalks");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/fortbildungsangebote/dermatalks-und-congresstv.html",
+					"Incorrect URL after clicking Learn More Button");
+		}
+		return this;
+	}
+
+	public Dermatologie clickOnFirstCardReadMoreButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", firstCardReadMoreButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(firstCardReadMoreButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("FirstCardReadMorePageAfterClick");
+			ReportUtil.attachScreenshot(screenshotPath);
+			Assert.assertTrue(driver.getTitle().contains("DermaTalks on demand | AbbVie Pro Deutschland"),
+					"Failed to navigate to DermaTalks");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/fortbildungsangebote/dermatalks-ondemand.html",
+					"Incorrect URL after clicking DermaTalks");
+		}
+		return this;
+	}
+
+	public Dermatologie clickOnSecondCardReadMoreButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		js.executeScript("arguments[0].scrollIntoView(true);", secondCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(secondCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
-
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("SecondCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			Assert.assertTrue(driver.getTitle().contains("EADV 2024 | AbbVie Pro Deutschland"),
+					"Failed to navigate to DermaTalks");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/eadv-2024.html",
+					"Incorrect URL after clicking DermaTalks");
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnThirdCardReadMoreButton() {
+	public Dermatologie clickOnThirdCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", thirdCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(thirdCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
 
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("ThirdCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			wait.until(ExpectedConditions.urlContains("aad-2024.htm"));
+			Assert.assertTrue(driver.getTitle().contains("CongressTV vom AAD 2024 | AbbVie Pro Deutschland"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/aad-2024.html",
+					"Incorrect URL after clicking DermaTalks");
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnFourthCardReadMoreButton() {
+	public Dermatologie clickOnFourthCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", fourthCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(fourthCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
 
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("FourthCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			wait.until(ExpectedConditions.urlContains("eadv-2023.html"));
+			Assert.assertTrue(driver.getTitle().contains("EADV 2023 | AbbVie Pro Deutschland"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/eadv-2023.html",
+					"Incorrect URL after clicking EADV 2023");
+
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnFifthCardReadMoreButton() {
+	public Dermatologie clickOnFifthCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", fifthCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(fifthCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
-
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("FifthCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			wait.until(ExpectedConditions.urlContains("aad-2023.html"));
+
+			Assert.assertTrue(
+					driver.getTitle().contains("CongressTV vom AAD 2023 – Kongress-Highlights aus erster Hand"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/aad-2023.html",
+					"Incorrect URL after clicking EADV 2023");
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnSixthCardReadMoreButton() {
+	public Dermatologie clickOnSixthCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", sixthCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(sixthCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
-
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("SixthCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			wait.until(ExpectedConditions.urlContains("adopt.html"));
+
+			Assert.assertTrue(
+					driver.getTitle().contains(
+							"Kandidat*innen für Systemtherapie der AD identifizieren | AbbVie Pro Deutschland"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/adopt.html",
+					"Incorrect URL after clicking EADV 2023");
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnSeventhCardReadMoreButton() {
+	public Dermatologie clickOnSeventhCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", seventhCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(seventhCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
-
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("SeventhCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			wait.until(ExpectedConditions.urlContains("eadv-2022.html"));
+
+			Assert.assertTrue(driver.getTitle().contains("CongressTV vom EADV 2022"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/eadv-2022.html",
+					"Incorrect URL after clicking EADV 2023");
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnEighthCardReadMoreButton() {
+	public Dermatologie clickOnEighthCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", eighthCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(eighthCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
+		String screenshotPath = screenshotUtil.takeScreenshot("EighthCardReadMoreButton");
+		ReportUtil.attachScreenshot(screenshotPath);
 
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			wait.until(ExpectedConditions.urlContains("genitale-psoriasis-im-fokus-der-forschung.html"));
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			Assert.assertTrue(driver.getTitle().contains("Genitale Psoriasis im Fokus der Forschung"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/genitale-psoriasis-im-fokus-der-forschung.html",
+					"Incorrect URL after clicking EADV 2023");
+		}
 		return this;
 	}
 
-	public Dermatologie clickOnNinethCardReadMoreButton() {
+	public Dermatologie clickOnNinethCardReadMoreButton() throws IOException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 		js.executeScript("arguments[0].scrollIntoView(true);", ninethCardReadMoreButton);
 		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(ninethCardReadMoreButton));
-		
 		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
 		clickableButton.click();
 
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
-			System.out.println("New Tab Title: " + driver.getTitle());
-			System.out.println("New Tab URL: " + driver.getCurrentUrl());
-		}
+			String screenshotPath = screenshotUtil.takeScreenshot("NinethCardReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
 
-		System.out.println("Returned to Parent Page: " + driver.getCurrentUrl() + " - " + driver.getTitle());
+			wait.until(
+					ExpectedConditions.urlContains("wie-zufrieden-sind-psoriasis-patienten-mit-ihrer-therapie.html"));
+			Assert.assertTrue(driver.getTitle().contains("Wie zufrieden sind Psoriasis-Patienten mit ihrer Therapie?"),
+					"Failed to navigate to CongressTV");
+			Assert.assertEquals(driver.getCurrentUrl(),
+					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/artikel/offen/wie-zufrieden-sind-psoriasis-patienten-mit-ihrer-therapie.html",
+					"Incorrect URL after clicking EADV 2023");
+		}
 		return this;
 	}
-	
-	//-------------------------
 
 	public Dermatologie clickCardLoadMoreButton() {
-		// Use JavascriptExecutor to scroll the element into view first
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", cardLoadMoreButton);
-
-		// Create a WebDriverWait instance with a 10-second timeout
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		// Wait for the element to be visible (or clickable)
 		WebElement clickableCardLoadMoreButton = wait
 				.until(ExpectedConditions.elementToBeClickable(cardLoadMoreButton));
-
-		// Use JavascriptExecutor to click the element, bypassing any overlaps
 		js.executeScript("arguments[0].click();", clickableCardLoadMoreButton);
-
-		System.out.println(driver.getCurrentUrl() + " - " + driver.getTitle());
 		return this;
 	}
 
-	public Dermatologie clickOnCardLoadMoreButton() {
-		cardLoadMoreButton.click();
-		return this;
-	}
-	
 	public Dermatologie scrollToPageTop() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, 0);");
-        System.out.println("Page scrolled to the top.");
-        return this;
-    }
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
+		System.out.println("Page scrolled to the top.");
+		return this;
+	}
+
+	public Dermatologie clickContactUsButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", contactUsButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(contactUsButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("ContactUsButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+			Assert.assertTrue(driver.getTitle().contains("Service und Kontakt | AbbVie Pro Deutschland"),
+					"New tab title for Contact Us is incorrect.");
+			Assert.assertTrue(
+					driver.getCurrentUrl().contains("https://www.abbviepro.com/de/de/kontakt-und-service.html"),
+					"New tab URL for Contact Us is incorrect.");
+		}
+		return this;
+	}
+
+	public Dermatologie clickAbbvieCareButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", abbvieCareButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(abbvieCareButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("AbbvieCareButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+			Assert.assertTrue(
+					driver.getTitle()
+							.contains("AbbVie Care unterstützt Sie bei der Therapie Ihrer chronischen Erkrankung"),
+					"New tab title for AbbVie Care is incorrect.");
+			Assert.assertTrue(driver.getCurrentUrl().contains("https://www.abbvie-care.de/"),
+					"New tab URL for AbbVie Care is incorrect.");
+		}
+		return this;
+	}
+
+	public Dermatologie clickAbbvieCareLearnMoreButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", abbvieCareLearnMoreButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(abbvieCareLearnMoreButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("AbbvieCareLearnMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+			wait.until(ExpectedConditions.urlContains("abbvie-care-serviceprogramme/"));
+			Assert.assertTrue(driver.getTitle().contains("AbbVie Care ist ein Serviceprogramm für chronisch Erkrankte"),
+					"New tab title for AbbVie Care is incorrect.");
+			Assert.assertTrue(
+					driver.getCurrentUrl().contains("https://www.abbvie-care.de/abbvie-care-serviceprogramme/"),
+					"New tab URL for AbbVie Care is incorrect.");
+		}
+		return this;
+	}
+
+	public Dermatologie clickAtopicDermatitisButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", atopicDermatitisButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(atopicDermatitisButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("AtopicDermatitisButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+			Assert.assertTrue(driver.getTitle().contains("Neurodermitis? Wen juckt’s? Das Krankheitsbild erkennen"),
+					"New tab title for Atopic Dermatitis is incorrect.");
+			Assert.assertTrue(driver.getCurrentUrl().contains("https://www.neurodermitis-wen-juckts.de/"),
+					"New tab URL for Atopic Dermatitis is incorrect.");
+		}
+		return this;
+	}
+
+	public Dermatologie clickPSOUL_ReadMoreButton() throws IOException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		js.executeScript("arguments[0].scrollIntoView(true);", PSOUL_ReadMoreButton);
+		WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(PSOUL_ReadMoreButton));
+		js.executeScript("arguments[0].setAttribute('target', '_blank');", clickableButton);
+		clickableButton.click();
+
+		try (WindowSession session = new WindowSession(driver, true)) {
+			session.switchToNewWindow();
+			String screenshotPath = screenshotUtil.takeScreenshot("PSOUL_ReadMoreButton");
+			ReportUtil.attachScreenshot(screenshotPath);
+
+
+			wait.until(ExpectedConditions.urlContains("psoul/"));
+			Assert.assertTrue(driver.getTitle().contains("PSOUL – Das Magazin über, mit und ohne Schuppenflechte"),
+					"New tab title for PSOUL Read More is incorrect.");
+			Assert.assertTrue(driver.getCurrentUrl().contains("https://www.abbvie-care.de/psoul/"),
+					"New tab URL for PSOUL Read More is incorrect.");
+		}
+		return this;
+	}
+
 }

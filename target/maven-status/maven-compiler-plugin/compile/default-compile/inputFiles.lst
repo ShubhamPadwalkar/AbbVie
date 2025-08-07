@@ -1,8 +1,10 @@
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/BasePage.java
+/Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Dermatologie.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Footer.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Header.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/HomePage.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/RegistrationPage.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Utils/ReportUtil.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Utils/ScreenshotUtil.java
+/Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Utils/ScrollUtils.java
 /Users/2076049/eclipse-workspace/abbvie/src/main/java/automationTesting/AbbviePro/Utils/WindowSession.java

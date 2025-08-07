@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="474.705" tests="59" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="440.251" tests="75" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/2076049/eclipse-workspace/abbvie/target/surefire/surefirebooter-20250804192555249_3.jar /Users/2076049/eclipse-workspace/abbvie/target/surefire 2025-08-04T19-25-55_172-jvmRun1 surefire-20250804192555249_1tmp surefire_0-20250804192555249_2tmp"/>
+    <property name="sun.java.command" value="/Users/2076049/eclipse-workspace/abbvie/target/surefire/surefirebooter-20250806224340514_3.jar /Users/2076049/eclipse-workspace/abbvie/target/surefire 2025-08-06T22-43-40_437-jvmRun1 surefire-20250806224340514_1tmp surefire_0-20250806224340514_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/2076049/eclipse-workspace/abbvie/target/test-classes:/Users/2076049/eclipse-workspace/abbvie/target/classes:/Users/2076049/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/2076049/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/2076049/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/2076049/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-java/4.15.0/selenium-java-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.15.0/selenium-chrome-driver-4.15.0.jar:/Users/2076049/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.15.0/selenium-chromium-driver-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-json/4.15.0/selenium-json-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.15.0/selenium-manager-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.15.0/selenium-devtools-v117-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.15.0/selenium-devtools-v118-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.15.0/selenium-devtools-v119-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.15.0/selenium-devtools-v85-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.15.0/selenium-edge-driver-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.15.0/selenium-firefox-driver-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-http/4.15.0/selenium-http-4.15.0.jar:/Users/2076049/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.15.0/selenium-ie-driver-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.15.0/selenium-remote-driver-4.15.0.jar:/Users/2076049/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/2076049/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/2076049/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/2076049/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/2076049/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/2076049/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/2076049/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-os/4.15.0/selenium-os-4.15.0.jar:/Users/2076049/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.15.0/selenium-safari-driver-4.15.0.jar:/Users/2076049/.m2/repository/org/seleniumhq/selenium/selenium-support/4.15.0/selenium-support-4.15.0.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-java/7.24.0/cucumber-java-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-core/7.24.0/cucumber-core-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-gherkin/7.24.0/cucumber-gherkin-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.24.0/cucumber-gherkin-messages-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/gherkin/33.0.0/gherkin-33.0.0.jar:/Users/2076049/.m2/repository/io/cucumber/messages/28.0.0/messages-28.0.0.jar:/Users/2076049/.m2/repository/io/cucumber/pretty-formatter/0.2.0/pretty-formatter-0.2.0.jar:/Users/2076049/.m2/repository/io/cucumber/query/13.5.0/query-13.5.0.jar:/Users/2076049/.m2/repository/io/cucumber/testng-xml-formatter/0.4.0/testng-xml-formatter-0.4.0.jar:/Users/2076049/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/2076049/.m2/repository/io/cucumber/datatable/7.24.0/datatable-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-plugin/7.24.0/cucumber-plugin-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/docstring/7.24.0/docstring-7.24.0.jar:/Users/2076049/.m2/repository/io/cucumber/html-formatter/21.13.0/html-formatter-21.13.0.jar:/Users/2076049/.m2/repository/io/cucumber/junit-xml-formatter/0.8.0/junit-xml-formatter-0.8.0.jar:/Users/2076049/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/2076049/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/2076049/.m2/repository/io/cucumber/cucumber-testng/7.24.0/cucumber-testng-7.24.0.jar:/Users/2076049/.m2/repository/io/github/bonigarcia/webdrivermanager/6.1.0/webdrivermanager-6.1.0.jar:/Users/2076049/.m2/repository/com/google/code/gson/gson/2.13.0/gson-2.13.0.jar:/Users/2076049/.m2/repository/com/google/errorprone/error_prone_annotations/2.37.0/error_prone_annotations-2.37.0.jar:/Users/2076049/.m2/repository/com/github/docker-java/docker-java/3.5.0/docker-java-3.5.0.jar:/Users/2076049/.m2/repository/com/github/docker-java/docker-java-core/3.5.0/docker-java-core-3.5.0.jar:/Users/2076049/.m2/repository/com/github/docker-java/docker-java-api/3.5.0/docker-java-api-3.5.0.jar:/Users/2076049/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/Users/2076049/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/Users/2076049/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/Users/2076049/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/2076049/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.0/docker-java-transport-httpclient5-3.5.0.jar:/Users/2076049/.m2/repository/com/github/docker-java/docker-java-transport/3.5.0/docker-java-transport-3.5.0.jar:/Users/2076049/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/2076049/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/2076049/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/2076049/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/2076049/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/2076049/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/2076049/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/2076049/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/2076049/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/2076049/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:/Users/2076049/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/2076049/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/2076049/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/2076049/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/2076049/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/2076049/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/2076049/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.9.2/extentreports-cucumber7-adapter-1.9.2.jar:/Users/2076049/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.1/extent-pdf-report-2.9.1.jar:/Users/2076049/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.1/cucumber-pdf-report-2.11.1.jar:/Users/2076049/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/2076049/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/2076049/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/2076049/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/2076049/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/2076049/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/2076049/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/2076049/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/2076049/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/2076049/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/2076049/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/2076049/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/2076049/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/2076049/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/2076049/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/2076049/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/2076049/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/2076049/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/2076049/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/2076049/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/2076049/eclipse-workspace/abbvie/target/surefire/surefirebooter-20250804192555249_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/2076049/eclipse-workspace/abbvie/target/surefire/surefirebooter-20250806224340514_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.16+8"/>
     <property name="user.name" value="2076049"/>
@@ -54,33 +54,135 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testNavigation" classname="automationTesting.AbbviePro.HeaderTest" time="13.596">
-    <system-out><![CDATA[Report created: reports/Report_04_August_07.25_PM.html
-Report display name: Report 04 August 07.25 PM
+  <testcase name="testNavigation" classname="automationTesting.AbbviePro.RegistrationTest" time="7.987">
+    <system-out><![CDATA[Report created: reports/Report_06_August_10.43_PM.html
+Report display name: Report 06 August 10.43 PM
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Aug 04, 2025 7:25:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Aug 06, 2025 10:43:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 138
-Aug 04, 2025 7:25:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Aug 06, 2025 10:43:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testHeaderLogo" classname="automationTesting.AbbviePro.HeaderTest" time="3.254"/>
-  <testcase name="testRegister_WithEmail" classname="automationTesting.AbbviePro.HeaderTest" time="29.373"/>
-  <testcase name="testRegister_FillDetails" classname="automationTesting.AbbviePro.HeaderTest" time="9.613"/>
-  <testcase name="testHomePageButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.199"/>
-  <testcase name="testProductPageButton" classname="automationTesting.AbbviePro.HeaderTest" time="6.072"/>
-  <testcase name="testProductChevronIcon" classname="automationTesting.AbbviePro.HeaderTest" time="0.492"/>
-  <testcase name="testProductOverviewButton" classname="automationTesting.AbbviePro.HeaderTest" time="20.009"/>
-  <testcase name="testProductAndUserInformationButton" classname="automationTesting.AbbviePro.HeaderTest" time="9.781"/>
-  <testcase name="testTrainingMaterialButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.126"/>
-  <testcase name="testTherapiegebieteButton" classname="automationTesting.AbbviePro.HeaderTest" time="6.44"/>
-  <testcase name="testtherapiegebieteChevronIcon" classname="automationTesting.AbbviePro.HeaderTest" time="0.277"/>
-  <testcase name="testImmunologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="14.555">
+  <testcase name="testHomePageNavigation" classname="automationTesting.AbbviePro.RegistrationTest" time="6.57"/>
+  <testcase name="testProductsLearnMore" classname="automationTesting.AbbviePro.RegistrationTest" time="2.466"/>
+  <testcase name="testTheoropaticButton" classname="automationTesting.AbbviePro.RegistrationTest" time="4.27"/>
+  <testcase name="testContactButton" classname="automationTesting.AbbviePro.RegistrationTest" time="3.476"/>
+  <testcase name="testSecondRegisterButton" classname="automationTesting.AbbviePro.RegistrationTest" time="3.887"/>
+  <testcase name="testSignUpButton" classname="automationTesting.AbbviePro.RegistrationTest" time="3.649"/>
+  <testcase name="testNavigation" classname="automationTesting.AbbviePro.FooterTest" time="6.88">
+    <system-out><![CDATA[Report created: reports/Report_06_August_10.44_PM.html
+Report display name: Report 06 August 10.44 PM
+]]></system-out>
+    <system-err><![CDATA[Aug 06, 2025 10:44:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Aug 06, 2025 10:44:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testFooterLogo" classname="automationTesting.AbbviePro.FooterTest" time="2.429"/>
+  <testcase name="testDermatologieButton" classname="automationTesting.AbbviePro.FooterTest" time="5.288">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie.html - Dermatologie | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testGastroenterologieButton" classname="automationTesting.AbbviePro.FooterTest" time="3.005">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/immunologie/gastroenterologie.html - Gastroenterologie | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testRheumatologieButton" classname="automationTesting.AbbviePro.FooterTest" time="4.71">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/immunologie/rheumatologie.html - Rheumatologie | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testOnkologieButton" classname="automationTesting.AbbviePro.FooterTest" time="6.407">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/onkologie.html - Onkologie | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testNeurologieButton" classname="automationTesting.AbbviePro.FooterTest" time="5.306">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/neurologie/parkinson-krankheit.html - Parkinson-Krankheit | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testHCVButton" classname="automationTesting.AbbviePro.FooterTest" time="2.809">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/virologie/hepatitis-c.html - Hepatitis C (HCV) | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testOphthalmologieButton" classname="automationTesting.AbbviePro.FooterTest" time="3.312">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/augenheilkunde/ophthalmologie.html - Ophthalmologie | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testUrologieButton" classname="automationTesting.AbbviePro.FooterTest" time="2.675">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/urologie.html - Urologie | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testImprintButton" classname="automationTesting.AbbviePro.FooterTest" time="5.465">
+    <system-out><![CDATA[New window closed.
+Switched back to original window.
+]]></system-out>
+  </testcase>
+  <testcase name="testPrivacyPolicyButton" classname="automationTesting.AbbviePro.FooterTest" time="5.745"/>
+  <testcase name="testTermsOfUseButton" classname="automationTesting.AbbviePro.FooterTest" time="2.653"/>
+  <testcase name="testContactInformationButton" classname="automationTesting.AbbviePro.FooterTest" time="8.653"/>
+  <testcase name="testSitemapButton" classname="automationTesting.AbbviePro.FooterTest" time="3.913"/>
+  <testcase name="testCardLoadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.143">
+    <system-out><![CDATA[Report created: reports/Report_06_August_10.45_PM.html
+Report display name: Report 06 August 10.45 PM
+]]></system-out>
+    <system-err><![CDATA[Aug 06, 2025 10:45:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Aug 06, 2025 10:45:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testDermatologieButtonNavigation" classname="automationTesting.AbbviePro.DermatologieTest" time="10.164"/>
+  <testcase name="testEighthCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.088"/>
+  <testcase name="testFifthCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.143"/>
+  <testcase name="testFirstCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.132"/>
+  <testcase name="testFourthCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.167"/>
+  <testcase name="testLearnMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.169"/>
+  <testcase name="testNavigation" classname="automationTesting.AbbviePro.DermatologieTest" time="8.373"/>
+  <testcase name="testNinethCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.297"/>
+  <testcase name="testPageScrolling" classname="automationTesting.AbbviePro.DermatologieTest" time="8.619">
+    <system-out><![CDATA[Starting slow scroll to bottom...
+]]></system-out>
+  </testcase>
+  <testcase name="testScrollToPageTop" classname="automationTesting.AbbviePro.DermatologieTest" time="0.25">
+    <system-out><![CDATA[Page scrolled to the top.
+]]></system-out>
+  </testcase>
+  <testcase name="testSecondCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.358"/>
+  <testcase name="testSeventhCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.262"/>
+  <testcase name="testSixthCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.291"/>
+  <testcase name="testStreamNowButton" classname="automationTesting.AbbviePro.DermatologieTest" time="3.445">
+    <system-out><![CDATA[https://www.abbviepro.com/de/de/produkte.html - Produkte | AbbVie Pro Deutschland
+]]></system-out>
+  </testcase>
+  <testcase name="testThirdCardReadMoreButton" classname="automationTesting.AbbviePro.DermatologieTest" time="10.279"/>
+  <testcase name="testNavigation" classname="automationTesting.AbbviePro.HeaderTest" time="7.762">
+    <system-out><![CDATA[Report created: reports/Report_06_August_10.47_PM.html
+Report display name: Report 06 August 10.47 PM
+]]></system-out>
+    <system-err><![CDATA[Aug 06, 2025 10:48:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Aug 06, 2025 10:48:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testHeaderLogo" classname="automationTesting.AbbviePro.HeaderTest" time="2.385"/>
+  <testcase name="testRegister_WithEmail" classname="automationTesting.AbbviePro.HeaderTest" time="8.45"/>
+  <testcase name="testRegister_FillDetails" classname="automationTesting.AbbviePro.HeaderTest" time="5.121"/>
+  <testcase name="testHomePageButton" classname="automationTesting.AbbviePro.HeaderTest" time="1.755"/>
+  <testcase name="testProductPageButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.698"/>
+  <testcase name="testProductChevronIcon" classname="automationTesting.AbbviePro.HeaderTest" time="0.428"/>
+  <testcase name="testProductOverviewButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.886"/>
+  <testcase name="testProductAndUserInformationButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.612"/>
+  <testcase name="testTrainingMaterialButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.938"/>
+  <testcase name="testTherapiegebieteButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.468"/>
+  <testcase name="testtherapiegebieteChevronIcon" classname="automationTesting.AbbviePro.HeaderTest" time="0.283"/>
+  <testcase name="testImmunologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="14.435">
     <failure message="Test Immunologie Button failed due to navigation issue." type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Test Immunologie Button failed due to navigation issue.
-	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:257)
+	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:259)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,9 +208,10 @@ WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need t
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
@@ -118,10 +221,10 @@ Caused by: org.openqa.selenium.ElementNotInteractableException: element not inte
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5bd0dec829f45f3124bdbd6f33161400, clickElement {id=f.32BAF56AFA382AB20A69C8BD0F3036A6.d.1DD40A0875D018048229DBA4EF102F96.e.320}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/yq/_yp1rq0n6mj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58472/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (5bd0dec829f45f3124bdbd6f33161400)] -> xpath: (//div[@class='main-navigation__inner']//a)[39]]
-Session ID: 5bd0dec829f45f3124bdbd6f33161400
+Command: [59303137dcbb81fb27d53ca14c29934e, clickElement {id=f.4A5CA197727CDEDA5EDAA8787168AEF9.d.D3935E89736D28CC17A432ADE1BCDC35.e.315}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/yq/_yp1rq0n6mj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62021/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (59303137dcbb81fb27d53ca14c29934e)] -> xpath: (//div[@class='main-navigation__inner']//a)[39]]
+Session ID: 59303137dcbb81fb27d53ca14c29934e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -136,33 +239,33 @@ Session ID: 5bd0dec829f45f3124bdbd6f33161400
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
 	at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:227)
-	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:243)
-	... 32 more
+	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:246)
+	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testDermatologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="16.882"/>
-  <testcase name="testGastroenterologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.728"/>
-  <testcase name="testRheumatologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="7.094"/>
-  <testcase name="testOnkologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="8.993"/>
-  <testcase name="testHematooncologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="8.74"/>
-  <testcase name="testSolidTumorsButton" classname="automationTesting.AbbviePro.HeaderTest" time="7.784"/>
-  <testcase name="testNeurologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="7.078"/>
-  <testcase name="testMigraineButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.782"/>
-  <testcase name="testParkinsonsDiseaseButton" classname="automationTesting.AbbviePro.HeaderTest" time="9.808"/>
-  <testcase name="testSpasticityAfterStrokeButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.991"/>
-  <testcase name="testVirologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="0.205">
+  <testcase name="testDermatologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.65"/>
+  <testcase name="testGastroenterologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.808"/>
+  <testcase name="testRheumatologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.85"/>
+  <testcase name="testOnkologieButton" classname="automationTesting.AbbviePro.HeaderTest" time="6.628"/>
+  <testcase name="testHematooncologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.94"/>
+  <testcase name="testSolidTumorsButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.644"/>
+  <testcase name="testNeurologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.016"/>
+  <testcase name="testMigraineButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.17"/>
+  <testcase name="testParkinsonsDiseaseButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.412"/>
+  <testcase name="testSpasticityAfterStrokeButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.646"/>
+  <testcase name="testVirologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.132">
     <failure message="Failed to navigate to Virologie page expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Failed to navigate to Virologie page expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:340)
-	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:476)
+	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:480)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,23 +291,24 @@ Session ID: 5bd0dec829f45f3124bdbd6f33161400
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="testHepatitisCHCVButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.41"/>
-  <testcase name="testOphthalmologyParentButton" classname="automationTesting.AbbviePro.HeaderTest" time="0.057">
+  <testcase name="testHepatitisCHCVButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.355"/>
+  <testcase name="testOphthalmologyParentButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.215">
     <failure message="Failed to navigate to Augenheilkunde page expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:359)
-	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:518)
+	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:524)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -230,132 +334,25 @@ Session ID: 5bd0dec829f45f3124bdbd6f33161400
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="testOphthalmologyChildButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.387"/>
-  <testcase name="testUrologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.189"/>
-  <testcase name="testIdiopathicOveractiveBladderButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.291"/>
-  <testcase name="testNeurogenicDetrusorOveractivityButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.287"/>
-  <testcase name="testRegisterNowButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.432">
-    <failure message="Failed to navigate to register page expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Failed to navigate to register page expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at automationTesting.AbbviePro.Header.clickOnRegisterNowButton(Header.java:408)
-	at automationTesting.AbbviePro.HeaderTest.testRegisterNowButton(HeaderTest.java:623)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-  </testcase>
-  <testcase name="testEventsAndTrainingButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.192"/>
-  <testcase name="testEventsAndTrainingChevronIcon" classname="automationTesting.AbbviePro.HeaderTest" time="10.213"/>
-  <testcase name="testMedicalScientificEventsButton" classname="automationTesting.AbbviePro.HeaderTest" time="7.182"/>
-  <testcase name="testProductRelatedEventsButton" classname="automationTesting.AbbviePro.HeaderTest" time="9.182"/>
-  <testcase name="testEventsAndTrainingRegisterNowButton" classname="automationTesting.AbbviePro.HeaderTest" time="5.045"/>
-  <testcase name="testServiceAndContactButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.372"/>
-  <testcase name="testNavigation" classname="automationTesting.AbbviePro.RegistrationTest" time="11.908">
-    <system-out><![CDATA[Report created: reports/Report_04_August_07.30_PM.html
-Report display name: Report 04 August 07.30 PM
-]]></system-out>
-    <system-err><![CDATA[Aug 04, 2025 7:30:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 138
-Aug 04, 2025 7:30:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testHomePageNavigation" classname="automationTesting.AbbviePro.RegistrationTest" time="12.893"/>
-  <testcase name="testProductsLearnMore" classname="automationTesting.AbbviePro.RegistrationTest" time="6.174"/>
-  <testcase name="testTheoropaticButton" classname="automationTesting.AbbviePro.RegistrationTest" time="8.082"/>
-  <testcase name="testContactButton" classname="automationTesting.AbbviePro.RegistrationTest" time="7.038"/>
-  <testcase name="testSecondRegisterButton" classname="automationTesting.AbbviePro.RegistrationTest" time="5.318"/>
-  <testcase name="testSignUpButton" classname="automationTesting.AbbviePro.RegistrationTest" time="4.144"/>
-  <testcase name="testNavigation" classname="automationTesting.AbbviePro.FooterTest" time="15.96">
-    <system-out><![CDATA[Report created: reports/Report_04_August_07.31_PM.html
-Report display name: Report 04 August 07.31 PM
-]]></system-out>
-    <system-err><![CDATA[Aug 04, 2025 7:31:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 138
-Aug 04, 2025 7:31:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 138.0.7204.184. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testFooterLogo" classname="automationTesting.AbbviePro.FooterTest" time="5.511"/>
-  <testcase name="testDermatologieButton" classname="automationTesting.AbbviePro.FooterTest" time="16.536">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie.html - Dermatologie | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testGastroenterologieButton" classname="automationTesting.AbbviePro.FooterTest" time="10.901">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/immunologie/gastroenterologie.html - Gastroenterologie | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testRheumatologieButton" classname="automationTesting.AbbviePro.FooterTest" time="10.525">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/immunologie/rheumatologie.html - Rheumatologie | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testOnkologieButton" classname="automationTesting.AbbviePro.FooterTest" time="10.109">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/onkologie.html - Onkologie | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testNeurologieButton" classname="automationTesting.AbbviePro.FooterTest" time="8.993">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/neurologie/parkinson-krankheit.html - Parkinson-Krankheit | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testHCVButton" classname="automationTesting.AbbviePro.FooterTest" time="7.034">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/virologie/hepatitis-c.html - Hepatitis C (HCV) | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testOphthalmologieButton" classname="automationTesting.AbbviePro.FooterTest" time="6.222">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/augenheilkunde/ophthalmologie.html - Ophthalmologie | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testUrologieButton" classname="automationTesting.AbbviePro.FooterTest" time="4.957">
-    <system-out><![CDATA[https://www.abbviepro.com/de/de/therapiegebiete/urologie.html - Urologie | AbbVie Pro Deutschland
-]]></system-out>
-  </testcase>
-  <testcase name="testImprintButton" classname="automationTesting.AbbviePro.FooterTest" time="6.137">
-    <system-out><![CDATA[New window closed.
-Switched back to original window.
-]]></system-out>
-  </testcase>
-  <testcase name="testPrivacyPolicyButton" classname="automationTesting.AbbviePro.FooterTest" time="8.754"/>
-  <testcase name="testTermsOfUseButton" classname="automationTesting.AbbviePro.FooterTest" time="2.05"/>
-  <testcase name="testContactInformationButton" classname="automationTesting.AbbviePro.FooterTest" time="9.537"/>
-  <testcase name="testSitemapButton" classname="automationTesting.AbbviePro.FooterTest" time="4.556"/>
+  <testcase name="testOphthalmologyChildButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.427"/>
+  <testcase name="testUrologyButton" classname="automationTesting.AbbviePro.HeaderTest" time="1.914"/>
+  <testcase name="testIdiopathicOveractiveBladderButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.039"/>
+  <testcase name="testNeurogenicDetrusorOveractivityButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.488"/>
+  <testcase name="testRegisterNowButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.401"/>
+  <testcase name="testEventsAndTrainingButton" classname="automationTesting.AbbviePro.HeaderTest" time="3.933"/>
+  <testcase name="testEventsAndTrainingChevronIcon" classname="automationTesting.AbbviePro.HeaderTest" time="0.292"/>
+  <testcase name="testMedicalScientificEventsButton" classname="automationTesting.AbbviePro.HeaderTest" time="10.358"/>
+  <testcase name="testProductRelatedEventsButton" classname="automationTesting.AbbviePro.HeaderTest" time="4.555"/>
+  <testcase name="testEventsAndTrainingRegisterNowButton" classname="automationTesting.AbbviePro.HeaderTest" time="1.775"/>
+  <testcase name="testServiceAndContactButton" classname="automationTesting.AbbviePro.HeaderTest" time="2.506"/>
 </testsuite>

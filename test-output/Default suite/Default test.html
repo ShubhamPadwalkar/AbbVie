@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 05 23:38:13 IST 2025</td>
+<td>Started on:</td><td>Wed Aug 06 20:19:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>107 seconds (107600 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9966 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,163 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testNavigation()'><b>testNavigation</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td><div><pre>java.lang.RuntimeException: Navigation failed, stopping test execution.
+	at automationTesting.AbbviePro.BaseTest.performCommonNavigation(BaseTest.java:70)
+	at automationTesting.AbbviePro.DermatologieTest.testNavigation(DermatologieTest.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [910d7800ae4bc5db7b5c3eb81f3caec2, get [url]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/yq/_yp1rq0n6mj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53696/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 910d7800ae4bc5db7b5c3eb81f3caec2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at automationTesting.AbbviePro.HomePage.navigateTo(HomePage.java:49)
+	at automationTesting.AbbviePro.BaseTest.performCommonNavigation(BaseTest.java:42)
+	... 27 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:450)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	... 30 more
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:873)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:961)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 9 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace253380088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace253380088'><pre>java.lang.RuntimeException: Navigation failed, stopping test execution.
+	at automationTesting.AbbviePro.BaseTest.performCommonNavigation(BaseTest.java:70)
+	at automationTesting.AbbviePro.DermatologieTest.testNavigation(DermatologieTest.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [910d7800ae4bc5db7b5c3eb81f3caec2, get [url]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/yq/_yp1rq0n6mj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53696/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 910d7800ae4bc5db7b5c3eb81f3caec2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at automationTesting.AbbviePro.HomePage.navigateTo(HomePage.java:49)
+	at automationTesting.AbbviePro.BaseTest.performCommonNavigation(BaseTest.java:42)
+	... 27 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:450)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	... 30 more
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:873)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:961)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 9 more
+</pre></div></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,55 +233,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testCongressTVFrom_AAD_RegisterButton()'><b>testCongressTVFrom_AAD_RegisterButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
-<td></td>
-<td>3</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testPageScrollingAgain()'><b>testPageScrollingAgain</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td title='automationTesting.AbbviePro.DermatologieTest.testScrollToPageTop()'><b>testScrollToPageTop</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
 <td></td>
 <td>0</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testCardLoadMoreButton()'><b>testCardLoadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td title='automationTesting.AbbviePro.DermatologieTest.testSeventhCardReadMoreButton()'><b>testSeventhCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
 <td></td>
-<td>17</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testDDG_CongressReportRegisterButton()'><b>testDDG_CongressReportRegisterButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td title='automationTesting.AbbviePro.DermatologieTest.testNinethCardReadMoreButton()'><b>testNinethCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
 <td></td>
-<td>1</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testPageScrolling()'><b>testPageScrolling</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
-<td></td>
-<td>41</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testReadMoreButton()'><b>testReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
-<td></td>
-<td>3</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testStreamNowButton()'><b>testStreamNowButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
-<td></td>
-<td>6</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.DermatologieTest.testDermatologieButtonNavigation()'><b>testDermatologieButtonNavigation</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
 <td></td>
-<td>7</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testFifthCardReadMoreButton()'><b>testFifthCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testPageScrolling()'><b>testPageScrolling</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testEighthCardReadMoreButton()'><b>testEighthCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testCardLoadMoreButton()'><b>testCardLoadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>5</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.DermatologieTest.testLearnMoreButton()'><b>testLearnMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
 <td></td>
-<td>8</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.DermatologieTest.testNavigation()'><b>testNavigation</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td title='automationTesting.AbbviePro.DermatologieTest.testFourthCardReadMoreButton()'><b>testFourthCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
 <td></td>
-<td>11</td>
-<td>automationTesting.AbbviePro.DermatologieTest@1c742ed4</td></tr>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testSecondCardReadMoreButton()'><b>testSecondCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testFirstCardReadMoreButton()'><b>testFirstCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testSixthCardReadMoreButton()'><b>testSixthCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testStreamNowButton()'><b>testStreamNowButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.DermatologieTest.testThirdCardReadMoreButton()'><b>testThirdCardReadMoreButton</b><br>Test class: automationTesting.AbbviePro.DermatologieTest</td>
+<td></td>
+<td>0</td>
+<td>automationTesting.AbbviePro.DermatologieTest@7e990ed7</td></tr>
 </table><p>
 </body>
 </html>

@@ -38,7 +38,6 @@ public class DermatologieTest extends BaseTest {
 			ReportUtil.logPass("Click on Learn More Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("LearnMorePage");
 			ReportUtil.attachScreenshot(screenshotPath);
-			dermatologie.pageBackButton();
 		} catch (Exception e) {
 			ReportUtil.logFail("Click on Learn More button failed: " + e.getMessage());
 			try {
@@ -58,7 +57,6 @@ public class DermatologieTest extends BaseTest {
 			ReportUtil.logPass("Click on Stream Now Button Successful.");
 			String screenshotPath = screenshotUtil.takeScreenshot("StreamNowPage");
 			ReportUtil.attachScreenshot(screenshotPath);
-			dermatologie.pageBackButton();
 		} catch (Exception e) {
 			ReportUtil.logFail("Click on Stream Now button failed: " + e.getMessage());
 			try {
@@ -79,7 +77,7 @@ public class DermatologieTest extends BaseTest {
 				ReportUtil.logPass("Click on Card Load More Button Successful - " + i);
 				String screenshotPath = screenshotUtil.takeScreenshot("CardLoadMorePage");
 				ReportUtil.attachScreenshot(screenshotPath);
-				Thread.sleep(1000);
+			//	Thread.sleep(1000);
 			}
 			// JavascriptExecutor js = (JavascriptExecutor) driver;
 			// js.executeScript("window.scrollTo(0, 0)");
@@ -301,6 +299,101 @@ public class DermatologieTest extends BaseTest {
 			ReportUtil.logFail("Page scrolling failed: " + e.getMessage());
 			try {
 				String screenshotPath = screenshotUtil.takeScreenshot("Scrolling_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testContactUsButton() {
+		ReportUtil.createTest("Click On Contact Us Button");
+		try {
+			dermatologie.clickContactUsButton();
+			ReportUtil.logPass("Click on Contact Us Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("ContactUsPage");
+			ReportUtil.attachScreenshot(screenshotPath);
+		} catch (Exception e) {
+			ReportUtil.logFail("Click on Contact Us button failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("ContactUs_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testAbbvieCareButton() {
+		ReportUtil.createTest("Click On AbbVie Care Button");
+		try {
+			dermatologie.clickAbbvieCareButton();
+			ReportUtil.logPass("Click on AbbVie Care Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("AbbvieCarePage");
+			ReportUtil.attachScreenshot(screenshotPath);
+		} catch (Exception e) {
+			ReportUtil.logFail("Click on AbbVie Care button failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("AbbvieCare_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testAbbvieCareLearnMoreButton() {
+		ReportUtil.createTest("Click On AbbVie Care Learn More Button");
+		try {
+			dermatologie.clickAbbvieCareLearnMoreButton();
+			ReportUtil.logPass("Click on AbbVie Care Learn More Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("AbbvieCareLearnMorePage");
+			ReportUtil.attachScreenshot(screenshotPath);
+		} catch (Exception e) {
+			ReportUtil.logFail("Click on AbbVie Care Learn More button failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("AbbvieCareLearnMore_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testAtopicDermatitisButton() {
+		ReportUtil.createTest("Click On Atopic Dermatitis Button");
+		try {
+			dermatologie.clickAtopicDermatitisButton();
+			ReportUtil.logPass("Click on Atopic Dermatitis Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("AtopicDermatitisPage");
+			ReportUtil.attachScreenshot(screenshotPath);
+		} catch (Exception e) {
+			ReportUtil.logFail("Click on Atopic Dermatitis button failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("AtopicDermatitis_failure");
+				ReportUtil.attachScreenshot(screenshotPath);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	@Test
+	public void testPSOUL_ReadMoreButton() {
+		ReportUtil.createTest("Click On PSOUL Read More Button");
+		try {
+			dermatologie.clickPSOUL_ReadMoreButton();
+			ReportUtil.logPass("Click on PSOUL Read More Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("PSOUL_ReadMorePage");
+			ReportUtil.attachScreenshot(screenshotPath);
+		} catch (Exception e) {
+			ReportUtil.logFail("Click on PSOUL Read More button failed: " + e.getMessage());
+			try {
+				String screenshotPath = screenshotUtil.takeScreenshot("PSOUL_ReadMore_failure");
 				ReportUtil.attachScreenshot(screenshotPath);
 			} catch (Exception ex) {
 				ex.printStackTrace();

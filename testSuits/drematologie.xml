@@ -4,7 +4,8 @@
 		<classes>
 			<class name="automationTesting.AbbviePro.DermatologieTest">
 				<methods>
-				<include name="testNavigation" />
+				
+				 	<include name="testNavigation" />
 					<include name="testDermatologieButtonNavigation" />
 					<include name="testLearnMoreButton" />
 					<include name="testStreamNowButton" />
@@ -18,9 +19,13 @@
 					<include name="testSeventhCardReadMoreButton" />
 					<include name="testEighthCardReadMoreButton" />
 					<include name="testNinethCardReadMoreButton" />
+					<include name="testContactUsButton" />
+					<include name="testAbbvieCareButton" />
+					<include name="testAbbvieCareLearnMoreButton" />
+					<include name="testAtopicDermatitisButton" />
+					<include name="testPSOUL_ReadMoreButton" />
 					<include name="testScrollToPageTop" />
-					<include name="testPageScrollingAgain" />
-					
+					<include name="testPageScrolling" /> 
 				</methods>
 			</class>
 		</classes>
