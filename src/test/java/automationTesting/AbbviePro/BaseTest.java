@@ -21,6 +21,7 @@ public class BaseTest {
 	protected Dermatologie dermatologie;
 	protected Gastroenterologie gastroenterologie;
 	protected BasePage basePage;
+	protected Rheumatologie rheumatologie;
 
 	@BeforeClass
 	public void commonSetUp() {
@@ -35,6 +36,7 @@ public class BaseTest {
 		homePage = new HomePage(driver);
 		dermatologie = new Dermatologie(driver);
 		gastroenterologie = new Gastroenterologie(driver);
+		rheumatologie = new Rheumatologie(driver);
 		
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");

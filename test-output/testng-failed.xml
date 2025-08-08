@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AbbviePro Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Home Page Tests(failed)">
+  <test thread-count="5" name="Rheumatologie Tests(failed)">
     <classes>
-      <class name="automationTesting.AbbviePro.HomePageTest">
+      <class name="automationTesting.AbbviePro.RheumatologieTest">
         <methods>
-          <include name="testContactButton"/>
+          <include name="testContactUsButton"/>
           <include name="commonSetUp"/>
+          <include name="testCommitmentLearnMoreButton"/>
+          <include name="testAbbvieCareButton"/>
+          <include name="testPodcastButton"/>
           <include name="commonTearDown"/>
         </methods>
-      </class> <!-- automationTesting.AbbviePro.HomePageTest -->
+      </class> <!-- automationTesting.AbbviePro.RheumatologieTest -->
     </classes>
-  </test> <!-- Home Page Tests(failed) -->
+  </test> <!-- Rheumatologie Tests(failed) -->
 </suite> <!-- Failed suite [AbbviePro Test Suite] -->

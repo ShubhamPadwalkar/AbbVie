@@ -65,12 +65,16 @@
 					<include name="testNeurologieButton" />
 					<include name="testHCVButton" />
 					<include name="testOphthalmologieButton" />
-					<include name="testUrologieButton" />
+					<include name="testUrologieButton" /> 
 					<include name="testImprintButton" />
 					<include name="testPrivacyPolicyButton" />
 					<include name="testTermsOfUseButton" />
 					<include name="testContactInformationButton" />
-					<include name="testSitemapButton" />
+					<include name="testSitemapButton" /> 
+					<include name="testFacebookIcon" />
+					<include name="testInstagramIcon" />
+					<include name="testLinkdinIcon" />
+					<include name="testYoutubeIcon" />
 				</methods>
 			</class>
 		</classes>
@@ -155,6 +159,41 @@
 					<include name="testLivingWith_IBD_LearnMoreButton" />
 					<include name="testScrollToPageTop" />
 					<include name="testPageScrolling" />	
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Rheumatologie Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.RheumatologieTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testRheumatologieButton" />
+					<include name="testConferencAndEventsLearnMoreButton" />
+			    	<include name="testCareTopicsLearnMoreButton" />
+					<include name="testExchangePlatformLearnMoreButton" />
+					<include name="testCardLoadMoreButton" /> 
+					<include name="testFirstCardReadMoreButton" /> 
+			        <include name="testSecondCardReadMoreButton" /> 
+					<include name="testThirdCardReadMoreButton" />
+					<include name="testFourthCardReadMoreButton" />
+					<include name="testFifthCardReadMoreButton" />
+					<include name="testSixthCardReadMoreButton" />
+					<include name="testSeventhCardReadMoreButton" />
+					<include name="testEighthCardReadMoreButton" />
+					<include name="testNinthCardReadMoreButton" />
+					<include name="testTenthCardReadMoreButton" />
+					<include name="testEleventhCardReadMoreButton" />
+					<include name="testTwelfthCardReadMoreButton" />
+					<include name="testThirteenthCardReadMoreButton" />
+					<include name="testFourteenthCardReadMoreButton" />
+					<include name="testFifteenthCardReadMoreButton" />
+					<include name="testSixteenthCardReadMoreButton" /> 
+					<include name="testPodcastButton" />
+					<include name="testAbbvieCareButton" />
+					<include name="testCommitmentLearnMoreButton" />
+					<include name="testContactUsButton" />  
 				</methods>
 			</class>
 		</classes>
