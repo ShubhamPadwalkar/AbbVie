@@ -121,9 +121,10 @@ public class Dermatologie extends BasePage {
 		clickableButton.click();
 		try (WindowSession session = new WindowSession(driver, true)) {
 			session.switchToNewWindow();
+			System.out.println(driver.getCurrentUrl()+" - "+driver.getTitle());
 			String screenshotPath = screenshotUtil.takeScreenshot("StreamNowButton");
 			ReportUtil.attachScreenshot(screenshotPath);
-			Assert.assertTrue(driver.getTitle().contains("Derma Talks &amp; Congress TV | AbbVie Pro Deutschland"),
+			Assert.assertTrue(driver.getTitle().contains("Derma Talks & Congress TV | AbbVie Pro Deutschland"),
 					"Failed to navigate to DermaTalks");
 			Assert.assertEquals(driver.getCurrentUrl(),
 					"https://www.abbviepro.com/de/de/therapiegebiete/immunologie/dermatologie/fortbildungsangebote/dermatalks-und-congresstv.html",

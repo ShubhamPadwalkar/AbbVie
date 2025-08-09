@@ -1,7 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="AbbviePro Master Test Suite">
 
-
 	<test name="Header Tests">
 		<classes>
 			<class name="automationTesting.AbbviePro.HeaderTest">
@@ -98,10 +97,10 @@
 		</classes>
 	</test>
 	
-	<test name="Dermatologie Page">
+ <test name="Dermatologie Page">
 	<classes>
-	<class name="automationTesting.AbbviePro.DermatologieTest">
-	<methods>
+		<class name="automationTesting.AbbviePro.DermatologieTest">
+			<methods>
 					<include name="testNavigation" />
 					<include name="testDermatologieButtonNavigation" />
 					<include name="testLearnMoreButton" />
@@ -123,12 +122,10 @@
 					<include name="testPSOUL_ReadMoreButton" />
 					<include name="testScrollToPageTop" />
 					<include name="testPageScrolling" /> 
-	
 				</methods>
 			</class>
 		</classes>
 	</test>
-
 
 <test name="Gastroenterologie Page">
 	<classes>
@@ -194,9 +191,43 @@
 					<include name="testAbbvieCareButton" />
 					<include name="testCommitmentLearnMoreButton" />
 					<include name="testContactUsButton" />  
+					<include name="testScrollToPageTop" />
+					<include name="testPageScrolling" /> 
 				</methods>
 			</class>
 		</classes>
 	</test>
-
+	
+	<test name="Oncology Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.OncologyTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testOncologyButton" />
+					<include name="testRegisterButton" />
+					<include name="testHematoOncologyLearnMoreButton" />
+					<include name="testSolidTumorLearnMoreButton" />
+					<include name="testContactUsButton" />
+					<include name="testScrollToPageTop" /> 
+					<include name="testPageScrolling" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Urology Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.UrologyTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testUrologyButton" />
+					<include name="testIdiopathicOveractiveBladderButton" />
+					<include name="testNeurogenicDetrusorOveractivityButton" />
+					<include name="testUrologyContactUsButton" />
+					<include name="testScrollToPageTop" /> 
+					<include name="testPageScrolling" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>

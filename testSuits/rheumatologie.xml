@@ -4,10 +4,9 @@
 		<classes>
 			<class name="automationTesting.AbbviePro.RheumatologieTest">
 				<methods>
-				
 					<include name="testNavigation" />
 					<include name="testRheumatologieButton" />
-					<include name="testConferencAndEventsLearnMoreButton" />
+			    	<include name="testConferencAndEventsLearnMoreButton" />
 			    	<include name="testCareTopicsLearnMoreButton" />
 					<include name="testExchangePlatformLearnMoreButton" />
 					<include name="testCardLoadMoreButton" /> 
@@ -30,7 +29,9 @@
 					<include name="testPodcastButton" />
 					<include name="testAbbvieCareButton" />
 					<include name="testCommitmentLearnMoreButton" />
-					<include name="testContactUsButton" />  
+					<include name="testContactUsButton" /> 
+					<include name="testScrollToPageTop" /> 
+					<include name="testPageScrolling" /> 
 				</methods>
 			</class>
 		</classes>

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -84,5 +85,12 @@ public class BasePage {
 			System.err.println("Failed to capture screenshot: " + e.getMessage());
 			return null;
 		}
+	}
+	
+	public BasePage scrollToPageTop() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
+		System.out.println("Page scrolled to the top.");
+		return this;
 	}
 }

@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationTesting.AbbviePro.Utils.ReportUtil;
+import automationTesting.AbbviePro.Utils.ScrollUtils;
 
 public class RheumatologieTest extends BaseTest {
 
@@ -508,4 +509,46 @@ public class RheumatologieTest extends BaseTest {
 	            Assert.fail("Test failed due to: " + e.getMessage());
 	        }
 	    }
+	    
+	    @Test
+		public void testScrollToPageTop() {
+			ReportUtil.createTest("Test Page Scrolling from Bottom to Top");
+			try {
+				ReportUtil.logInfo("Page Scrolling from Bottom to Top.");
+				rheumatologie.scrollToPageTop();
+				String scrollBottomtoTop = screenshotUtil.takeScreenshot("BottomtoTop");
+				ReportUtil.attachScreenshot(scrollBottomtoTop);
+
+			} catch (Exception e) {
+				ReportUtil.logFail("Page scrolling failed: " + e.getMessage());
+				try {
+					String screenshotPath = screenshotUtil.takeScreenshot("Scrolling_failure");
+					ReportUtil.attachScreenshot(screenshotPath);
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		}
+
+	    @Test
+		public void testPageScrolling() {
+			ReportUtil.createTest("Test Page Scrolling from Top to Bottom and Back to Top");
+			try {
+				ReportUtil.logInfo("Scrolling page slowly from top to bottom and back to top.");
+
+				String scrollScreenshotPath = screenshotUtil.takeScreenshot("rheumatologie_Scrolled_Bottom");
+				ScrollUtils.scrollPageToBottomAndBackToTop(driver, 50, 100, scrollScreenshotPath);
+
+				ReportUtil.logPass("Page scroll successful. Screenshot taken at the bottom.");
+				ReportUtil.attachScreenshot(scrollScreenshotPath);
+			} catch (Exception e) {
+				ReportUtil.logFail("Page scrolling failed: " + e.getMessage());
+				try {
+					String screenshotPath = screenshotUtil.takeScreenshot("Scrolling_failure");
+					ReportUtil.attachScreenshot(screenshotPath);
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		}
 }

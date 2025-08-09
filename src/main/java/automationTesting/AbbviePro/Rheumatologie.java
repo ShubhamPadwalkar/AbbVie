@@ -38,7 +38,6 @@ public class Rheumatologie extends BasePage {
 
 	@FindBy(xpath = "//button[@class='dmpro-v2 btn btn-primary btn-with-icon']")
 	private WebElement cardLoadMoreButton;
-	// ------
 
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon mb-0'])[3]")
 	private WebElement firstCardReadMoreButton;
@@ -87,7 +86,6 @@ public class Rheumatologie extends BasePage {
 
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon mb-0'])[18]")
 	private WebElement sixteenthCardReadMoreButton;
-	// ------
 
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[4]")
 	private WebElement podcastButton;
@@ -101,7 +99,6 @@ public class Rheumatologie extends BasePage {
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[7]")
 	private WebElement contactUsButton;
 
-	// ------
 	public Rheumatologie clickOnRheumatologieButton() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", rheumatologieButton);
