@@ -50,7 +50,6 @@
 		</classes>
 	</test>
 
-
 	<test name="Footer Tests">
 		<classes>
 			<class name="automationTesting.AbbviePro.FooterTest">
@@ -127,7 +126,7 @@
 		</classes>
 	</test>
 
-<test name="Gastroenterologie Page">
+ <test name="Gastroenterologie Page">
 	<classes>
 		<class name="automationTesting.AbbviePro.GastroenterologieTest">
 			<methods>
@@ -226,6 +225,34 @@
 					<include name="testUrologyContactUsButton" />
 					<include name="testScrollToPageTop" /> 
 					<include name="testPageScrolling" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Neurology Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.NeurologyTest">
+				<methods>
+				<include name="testNavigation" />
+					<include name="testNeurologyButton" />
+					<include name="testCarouselChevronIcon" /> 
+					<include name="testCardLoadMoreButton" /> 
+					<include name="testEAN_CongressReadMoreButton" />
+                    <include name="testS2K_GuidelineReadMoreButton" />
+                    <include name="testEventsInNeurologyReadMoreButton" />
+                    <include name="testParkinsonDiseaseReadMoreButton" /> 
+                    <include name="testManage_PD_AccessToolButton" />
+                    <include name="testInformationRequestForFreeButton" />
+                    <include name="testAbbvieCareButton" />
+                    <include name="testPARKOUR_ToTheCurrentIssueButton" />
+                    <include name="testParkinsonLearnMoreButton" />
+                    <include name="testAbbvieNetworking_PHP_Button" />
+                    <include name="testParkinsonNetworkYoutubeVideoButton" />
+                    <include name="testParkinsonNetworkGermany_PND_Button" />
+                    <include name="testContactUsButton" /> 
+                    <include name="testScrollToPageTop" />
+                    <include name="testPageScrolling" /> 	
 				</methods>
 			</class>
 		</classes>

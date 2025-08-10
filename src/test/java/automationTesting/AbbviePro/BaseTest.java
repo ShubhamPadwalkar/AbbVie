@@ -23,6 +23,7 @@ public class BaseTest {
 	protected Rheumatologie rheumatologie;
 	protected Oncology oncology;
 	protected Urology urology;
+	protected Neurology neurology;
 
 	@BeforeSuite
 	public void initReportSuite() {
@@ -31,8 +32,6 @@ public class BaseTest {
 
 	@BeforeClass
 	public void commonSetUp() {
-//		ReportUtil.initReport();
-//		ReportUtil.createTest("Test Setup");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().deleteAllCookies();
@@ -45,12 +44,12 @@ public class BaseTest {
 		rheumatologie = new Rheumatologie(driver);
 		oncology = new Oncology(driver);
 		urology = new Urology(driver);
-
+		neurology = new Neurology(driver);
+		
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");
 	}
 
-	// This method encapsulates the common navigation logic
 	protected void performCommonNavigation() {
 		ReportUtil.createTest("Navigation");
 		try {

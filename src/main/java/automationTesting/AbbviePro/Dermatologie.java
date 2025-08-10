@@ -10,9 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import automationTesting.AbbviePro.Utils.ReportUtil;
-import automationTesting.AbbviePro.Utils.ScrollUtils;
 import automationTesting.AbbviePro.Utils.WindowSession;
 
 public class Dermatologie extends BasePage {
