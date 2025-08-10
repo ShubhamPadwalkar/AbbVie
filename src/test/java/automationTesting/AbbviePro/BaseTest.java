@@ -2,7 +2,6 @@ package automationTesting.AbbviePro;
 
 import java.time.Duration;
 
-import org.apache.commons.compress.harmony.pack200.NewAttribute;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,10 +24,15 @@ public class BaseTest {
 	protected Oncology oncology;
 	protected Urology urology;
 
+	@BeforeSuite
+	public void initReportSuite() {
+		ReportUtil.initReport();
+	}
+
 	@BeforeClass
 	public void commonSetUp() {
-		ReportUtil.initReport();
-		ReportUtil.createTest("Test Setup"); 
+//		ReportUtil.initReport();
+//		ReportUtil.createTest("Test Setup");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().deleteAllCookies();
@@ -41,14 +45,14 @@ public class BaseTest {
 		rheumatologie = new Rheumatologie(driver);
 		oncology = new Oncology(driver);
 		urology = new Urology(driver);
-		
+
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");
 	}
 
 	// This method encapsulates the common navigation logic
 	protected void performCommonNavigation() {
-		ReportUtil.createTest("Navigation"); 
+		ReportUtil.createTest("Navigation");
 		try {
 			basePage.navigateTo();
 			ReportUtil.logPass("Navigation To AbbViePro Website Successful.");
@@ -78,7 +82,7 @@ public class BaseTest {
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
-			throw new RuntimeException("Navigation failed, stopping test execution.", e); 
+			throw new RuntimeException("Navigation failed, stopping test execution.", e);
 		}
 	}
 
@@ -102,6 +106,13 @@ public class BaseTest {
 				ReportUtil.logInfo("Browser closed.");
 			}
 		}
-		ReportUtil.flushReport();
+
+//		ReportUtil.flushReport();
 	}
+
+	@AfterSuite
+	public void flushReportSuite() {
+		ReportUtil.flushReport(); 
+	}
+
 }

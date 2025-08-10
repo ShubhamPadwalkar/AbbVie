@@ -9,20 +9,11 @@
           <include name="commonSetUp"/>
           <include name="testImmunologieButton"/>
           <include name="testVirologyButton"/>
+          <include name="flushReportSuite"/>
+          <include name="initReportSuite"/>
           <include name="commonTearDown"/>
         </methods>
       </class> <!-- automationTesting.AbbviePro.HeaderTest -->
     </classes>
   </test> <!-- Header Tests(failed) -->
-  <test thread-count="5" name="Dermatologie Page(failed)">
-    <classes>
-      <class name="automationTesting.AbbviePro.DermatologieTest">
-        <methods>
-          <include name="commonSetUp"/>
-          <include name="testStreamNowButton"/>
-          <include name="commonTearDown"/>
-        </methods>
-      </class> <!-- automationTesting.AbbviePro.DermatologieTest -->
-    </classes>
-  </test> <!-- Dermatologie Page(failed) -->
 </suite> <!-- Failed suite [AbbviePro Master Test Suite] -->

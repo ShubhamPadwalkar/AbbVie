@@ -77,7 +77,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test>  
 	
 	<test name="Home Page Tests">
 		<classes>
@@ -196,7 +196,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> 
 	
 	<test name="Oncology Tests">
 		<classes>
