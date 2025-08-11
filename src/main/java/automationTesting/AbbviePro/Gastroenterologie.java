@@ -77,8 +77,6 @@ public class Gastroenterologie extends BasePage {
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-white     text-left'])[3]")
 	private WebElement exclusivelyLearnMoreButton;
 	
-	//------
-	
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[2]")
 	private WebElement contactUsButton;
 	
@@ -88,8 +86,6 @@ public class Gastroenterologie extends BasePage {
 	@FindBy(xpath = "(//a[@class='dmpro-v2 btn btn-primary btn-with-icon  text-primary-color     text-left'])[4]")
 	private WebElement livingWith_IBD_LearnMoreButton;
 	
-	
-
 	public Gastroenterologie clickOnGastroenterologieButton() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", gastroenterologieButton);

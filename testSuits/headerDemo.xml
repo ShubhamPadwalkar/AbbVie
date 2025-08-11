@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AbbviePro Test Suite">
+	<test name="HeaderDemo Tests">
+		<classes>
+			<class name="automationTesting.AbbviePro.HeaderDemoTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="clickOnTherapiegebieteButtonDemo" />
+					<include name="testImmunologieButton" />
+					<include name="testDermatologieButtonDemo" />
+				<!--	<include name="testImmunologieButton" />
+					<include name="testImmunologieButton" />
+				    <include name="testDermatologieButton" />  -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

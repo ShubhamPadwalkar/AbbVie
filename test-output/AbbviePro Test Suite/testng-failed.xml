@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AbbviePro Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Neurology Tests(failed)">
+  <test thread-count="5" name="HCV Test(failed)">
     <classes>
-      <class name="automationTesting.AbbviePro.NeurologyTest">
+      <class name="automationTesting.AbbviePro.HCVTest">
         <methods>
           <include name="commonSetUp"/>
-          <include name="flushReportSuite"/>
           <include name="initReportSuite"/>
-          <include name="testParkinsonNetworkYoutubeVideoButton"/>
+          <include name="testSeventeenthCardReadMoreButton"/>
+          <include name="flushReportSuite"/>
           <include name="commonTearDown"/>
         </methods>
-      </class> <!-- automationTesting.AbbviePro.NeurologyTest -->
+      </class> <!-- automationTesting.AbbviePro.HCVTest -->
     </classes>
-  </test> <!-- Neurology Tests(failed) -->
+  </test> <!-- HCV Test(failed) -->
 </suite> <!-- Failed suite [AbbviePro Test Suite] -->

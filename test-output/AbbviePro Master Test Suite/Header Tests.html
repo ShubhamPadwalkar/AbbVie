@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>32/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 10 18:54:57 IST 2025</td>
+<td>Started on:</td><td>Mon Aug 11 16:18:26 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>179 seconds (179006 ms)</td>
+<tr><td>Total time:</td><td>176 seconds (176112 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,62 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testImmunologieButton()'><b>testImmunologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td><div><pre>java.lang.AssertionError: Failed to navigate to Immunologie page expected [true] but found [false]
-	at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:228)
-	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:246)
+<td title='automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton()'><b>testOphthalmologyParentButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
+	at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:368)
+	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:544)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace397857830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace397857830'><pre>java.lang.AssertionError: Failed to navigate to Immunologie page expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1585189917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1585189917'><pre>java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:228)
-	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:246)
+	at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:368)
+	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:544)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testImmunologieButton()'><b>testImmunologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td><div><pre>java.lang.AssertionError: Incorrect URL after clicking Immunologie button expected [https://www.abbviepro.com/de/de/therapiegebiete/immunologie.html] but found [https://www.abbviepro.com/de/de.html]
+	at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:239)
+	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:266)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1555413896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1555413896'><pre>java.lang.AssertionError: Incorrect URL after clicking Immunologie button expected [https://www.abbviepro.com/de/de/therapiegebiete/immunologie.html] but found [https://www.abbviepro.com/de/de.html]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at automationTesting.AbbviePro.Header.clickOnImmunologieButton(Header.java:239)
+	at automationTesting.AbbviePro.HeaderTest.testImmunologieButton(HeaderTest.java:266)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -120,58 +164,16 @@ function toggleAllBoxes() {
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testVirologyButton()'><b>testVirologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td><div><pre>java.lang.AssertionError: Failed to navigate to Virologie page expected [true] but found [false]
-	at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:340)
-	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:480)
+	at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:349)
+	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:500)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629133067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1629133067'><pre>java.lang.AssertionError: Failed to navigate to Virologie page expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1644987969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1644987969'><pre>java.lang.AssertionError: Failed to navigate to Virologie page expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:340)
-	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:480)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>4</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton()'><b>testOphthalmologyParentButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td><div><pre>java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
-	at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:359)
-	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:524)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace224219987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace224219987'><pre>java.lang.AssertionError: Failed to navigate to Augenheilkunde page expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at automationTesting.AbbviePro.Header.clickOnOphthalmologyParentButton(Header.java:359)
-	at automationTesting.AbbviePro.HeaderTest.testOphthalmologyParentButton(HeaderTest.java:524)
+	at automationTesting.AbbviePro.Header.clickOnVirologyButton(Header.java:349)
+	at automationTesting.AbbviePro.HeaderTest.testVirologyButton(HeaderTest.java:500)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -211,34 +213,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testMigraineButton()'><b>testMigraineButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>2</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testRegister_FillDetails()'><b>testRegister_FillDetails</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>4</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testHematooncologyButton()'><b>testHematooncologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>5</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testProductChevronIcon()'><b>testProductChevronIcon</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>0</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testEventsAndTrainingButton()'><b>testEventsAndTrainingButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testProductPageButton()'><b>testProductPageButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>3</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testHeaderLogo()'><b>testHeaderLogo</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testTherapiegebieteButton()'><b>testTherapiegebieteButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>2</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testMigraineButton()'><b>testMigraineButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>3</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testOnkologieButton()'><b>testOnkologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>4</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testTrainingMaterialButton()'><b>testTrainingMaterialButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>4</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testProductAndUserInformationButton()'><b>testProductAndUserInformationButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
@@ -246,9 +243,19 @@ function toggleAllBoxes() {
 <td>4</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testServiceAndContactButton()'><b>testServiceAndContactButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testGastroenterologieButton()'><b>testGastroenterologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>3</td>
+<td>2</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testUrologyButton()'><b>testUrologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>2</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testNeurogenicDetrusorOveractivityButton()'><b>testNeurogenicDetrusorOveractivityButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>2</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testMedicalScientificEventsButton()'><b>testMedicalScientificEventsButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
@@ -256,29 +263,29 @@ function toggleAllBoxes() {
 <td>10</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testRegister_WithEmail()'><b>testRegister_WithEmail</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testSolidTumorsButton()'><b>testSolidTumorsButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>9</td>
+<td>5</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testNeurologyButton()'><b>testNeurologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testRegister_FillDetails()'><b>testRegister_FillDetails</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>4</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testProductRelatedEventsButton()'><b>testProductRelatedEventsButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>6</td>
+<td>10</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testEventsAndTrainingRegisterNowButton()'><b>testEventsAndTrainingRegisterNowButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>2</td>
+<td>3</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testProductPageButton()'><b>testProductPageButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testProductRelatedEventsButton()'><b>testProductRelatedEventsButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>3</td>
+<td>7</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testProductChevronIcon()'><b>testProductChevronIcon</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>0</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testRheumatologieButton()'><b>testRheumatologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
@@ -286,19 +293,14 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testUrologyButton()'><b>testUrologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testOphthalmologyChildButton()'><b>testOphthalmologyChildButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>3</td>
+<td>10</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testTrainingMaterialButton()'><b>testTrainingMaterialButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testHematooncologyButton()'><b>testHematooncologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>3</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testParkinsonsDiseaseButton()'><b>testParkinsonsDiseaseButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>6</td>
+<td>4</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testEventsAndTrainingChevronIcon()'><b>testEventsAndTrainingChevronIcon</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
@@ -306,49 +308,39 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testDermatologieButton()'><b>testDermatologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>10</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testProductOverviewButton()'><b>testProductOverviewButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testSpasticityAfterStrokeButton()'><b>testSpasticityAfterStrokeButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>3</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testNavigation()'><b>testNavigation</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testRegister_WithEmail()'><b>testRegister_WithEmail</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>14</td>
+<td>6</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testSolidTumorsButton()'><b>testSolidTumorsButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
-<td></td>
-<td>4</td>
-<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
-<tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testNeurogenicDetrusorOveractivityButton()'><b>testNeurogenicDetrusorOveractivityButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testHeaderLogo()'><b>testHeaderLogo</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>3</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testHomePageButton()'><b>testHomePageButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>1</td>
+<td>10</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testGastroenterologieButton()'><b>testGastroenterologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testNeurologyButton()'><b>testNeurologyButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>2</td>
+<td>3</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testOnkologieButton()'><b>testOnkologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testProductOverviewButton()'><b>testProductOverviewButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testSpasticityAfterStrokeButton()'><b>testSpasticityAfterStrokeButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testNavigation()'><b>testNavigation</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
-<td>2</td>
+<td>5</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testHepatitisCHCVButton()'><b>testHepatitisCHCVButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
@@ -356,17 +348,27 @@ function toggleAllBoxes() {
 <td>10</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testTherapiegebieteButton()'><b>testTherapiegebieteButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testEventsAndTrainingButton()'><b>testEventsAndTrainingButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>3</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testParkinsonsDiseaseButton()'><b>testParkinsonsDiseaseButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>4</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
-<td title='automationTesting.AbbviePro.HeaderTest.testOphthalmologyChildButton()'><b>testOphthalmologyChildButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td title='automationTesting.AbbviePro.HeaderTest.testDermatologieButton()'><b>testDermatologieButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>10</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
 <tr>
 <td title='automationTesting.AbbviePro.HeaderTest.testIdiopathicOveractiveBladderButton()'><b>testIdiopathicOveractiveBladderButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
+<td></td>
+<td>2</td>
+<td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>
+<tr>
+<td title='automationTesting.AbbviePro.HeaderTest.testServiceAndContactButton()'><b>testServiceAndContactButton</b><br>Test class: automationTesting.AbbviePro.HeaderTest</td>
 <td></td>
 <td>2</td>
 <td>automationTesting.AbbviePro.HeaderTest@446a1e84</td></tr>

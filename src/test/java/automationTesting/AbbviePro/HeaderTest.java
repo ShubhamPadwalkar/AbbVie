@@ -32,26 +32,46 @@ public class HeaderTest extends BaseTest {
 		}
 	}
 
+//	@Test(priority = 3)
+//	public void testRegister_WithEmail() {
+//		ReportUtil.createTest("Click On Home Page Register Button (If Already SignIn)");
+//		try {
+//			header.clickOnRegisterWithEmail();
+//			ReportUtil.logPass("Click on Home Page Register Button (If Already SignIn) Successful.");
+//			String screenshotPath = screenshotUtil.takeScreenshot("HeaderLogo");
+//			ReportUtil.attachScreenshot(screenshotPath);
+//			header.pageBackButton();
+//			Thread.sleep(1000);
+//		} catch (Exception e) {
+//			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+//			try {
+//				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+//				ReportUtil.attachScreenshot(screenshotPath);
+//			} catch (Exception ex) {
+//				ex.printStackTrace();
+//			}
+//		}
+//	}
+	
 	@Test(priority = 3)
 	public void testRegister_WithEmail() {
 		ReportUtil.createTest("Click On Home Page Register Button (If Already SignIn)");
 		try {
 			header.clickOnRegisterWithEmail();
-			ReportUtil.logPass("Click on Home Page Register Button (If Already SignIn) Successful.");
-			String screenshotPath = screenshotUtil.takeScreenshot("HeaderLogo");
+			ReportUtil.logPass("Click on First Card Read More Button Successful.");
+			String screenshotPath = screenshotUtil.takeScreenshot("FirstCardReadMorePage");
 			ReportUtil.attachScreenshot(screenshotPath);
-			header.pageBackButton();
-			Thread.sleep(1000);
 		} catch (Exception e) {
-			ReportUtil.logFail("Navigation failed: " + e.getMessage());
+			ReportUtil.logFail("Click on First Card Read More button failed: " + e.getMessage());
 			try {
-				String screenshotPath = screenshotUtil.takeScreenshot("Navigation_failure");
+				String screenshotPath = screenshotUtil.takeScreenshot("FirstCardReadMore_failure");
 				ReportUtil.attachScreenshot(screenshotPath);
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
 		}
 	}
+
 
 	@Test(priority = 4)
 	public void testRegister_FillDetails() {

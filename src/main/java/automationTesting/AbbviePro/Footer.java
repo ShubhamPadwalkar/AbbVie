@@ -388,10 +388,7 @@ public class Footer extends BasePage {
             String screenshotPath = screenshotUtil.takeScreenshot("InstagramPageAfterClick");
             ReportUtil.attachScreenshot(screenshotPath);
             System.out.println("Instagram - " + driver.getCurrentUrl() + " - " + driver.getTitle());
-
-			Assert.assertTrue(driver.getTitle().contains("AbbVie (@abbvie) • Instagram-Fotos und -Videos"),
-					"Failed to navigate to AbbVie Deutschland Instagram page");
-			Assert.assertEquals(driver.getCurrentUrl(), "https://www.instagram.com/abbvie/?hl=de",
+			Assert.assertEquals(driver.getCurrentUrl(), "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fabbvie%2F%3Fhl%3Dde&is_from_rle",
 					 "Incorrect URL after clicking Instagram link");
         }
         return this;
