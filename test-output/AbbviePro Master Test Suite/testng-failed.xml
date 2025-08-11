@@ -16,4 +16,17 @@
       </class> <!-- automationTesting.AbbviePro.HeaderTest -->
     </classes>
   </test> <!-- Header Tests(failed) -->
+  <test thread-count="5" name="Footer Tests(failed)">
+    <classes>
+      <class name="automationTesting.AbbviePro.FooterTest">
+        <methods>
+          <include name="commonSetUp"/>
+          <include name="flushReportSuite"/>
+          <include name="initReportSuite"/>
+          <include name="testInstagramIcon"/>
+          <include name="commonTearDown"/>
+        </methods>
+      </class> <!-- automationTesting.AbbviePro.FooterTest -->
+    </classes>
+  </test> <!-- Footer Tests(failed) -->
 </suite> <!-- Failed suite [AbbviePro Master Test Suite] -->

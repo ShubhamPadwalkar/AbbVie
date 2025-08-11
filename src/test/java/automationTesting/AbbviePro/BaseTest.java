@@ -25,7 +25,7 @@ public class BaseTest {
 	protected Urology urology;
 	protected Neurology neurology;
 	protected HCV hcv;
-	
+	protected Ophthalmology ophthalmology;
 	@BeforeSuite
 	public void initReportSuite() {
 		ReportUtil.initReport();
@@ -47,6 +47,7 @@ public class BaseTest {
 		urology = new Urology(driver);
 		neurology = new Neurology(driver);
 		hcv = new HCV(driver);
+		ophthalmology = new Ophthalmology(driver);
 		
 		screenshotUtil = new ScreenshotUtil(driver);
 		ReportUtil.logInfo("Browser launched and cookies cleared.");

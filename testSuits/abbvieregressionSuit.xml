@@ -257,4 +257,53 @@
 			</class>
 		</classes>
 	</test>
+	
+	<test name="HCV Test">
+		<classes>
+			<class name="automationTesting.AbbviePro.HCVTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testHCVButton" />
+					<include name="testCardLoadMoreButton" />
+  					<include name="testFirstCardReadMoreButton" />
+                    <include name="testSecondCardReadMoreButton" />
+                    <include name="testThirdCardReadMoreButton" />
+                    <include name="testFourthCardReadMoreButton" />
+                    <include name="testFifthCardReadMoreButton" />
+                    <include name="testSixthCardReadMoreButton" />
+                    <include name="testSeventhCardReadMoreButton" />
+                    <include name="testEighthCardReadMoreButton" />
+                    <include name="testNinthCardReadMoreButton" />
+                    <include name="testTenthCardReadMoreButton" />
+                    <include name="testEleventhCardReadMoreButton" />
+                    <include name="testTwelfthCardReadMoreButton" />
+                    <include name="testThirteenthCardReadMoreButton" />
+                    <include name="testFourteenthCardReadMoreButton" />
+                    <include name="testFifteenthCardReadMoreButton" />
+                    <include name="testSixteenthCardReadMoreButton" />
+                    <include name="testSeventeenthCardReadMoreButton" />
+                    <include name="testAbbvieCareButton" />
+ 					<include name="testRegisterNowButton" />
+ 					<include name="testContactUsButton" />
+ 			<!--	<include name="testAccordionButton" /> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Opthalmology Test">
+		<classes>
+			<class name="automationTesting.AbbviePro.OpthalmologyTest">
+				<methods>
+					<include name="testNavigation" />
+					<include name="testOphthalmologyButton" />
+  					<include name="testAbbvieCareButton" />
+                    <include name="testLearnMoreButton" />
+                    <include name="testToTheDownloadAreaButtonForPatient" />
+                    <include name="testToTheDownloadAreaButtonForPractitioners" />
+                    <include name="testContactUsButton" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>

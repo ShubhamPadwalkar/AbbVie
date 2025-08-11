@@ -12,7 +12,7 @@
 					<include name="testContactButton" /> 
 				    <include name="testSecondRegisterButton" />
 				    <include name="testSecondContactUsButton" /> 
-				    <include name="testBackToTopButton" /> 
+				<!--  <include name="testBackToTopButton" /> -->  
 				</methods>
 			</class>
 		</classes>
